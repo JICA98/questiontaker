@@ -1,8 +1,0 @@
-com.questiontaker.feature.home-pngs-0 C:\Users\Admin\repo\questiontaker\feature\home\build\generated\res\pngs\debug
-com.questiontaker.feature.home-updated_navigation_xml-1 C:\Users\Admin\repo\questiontaker\feature\home\build\generated\updated_navigation_xml\debug
-com.questiontaker.feature.home-mergeDebugResources-2 C:\Users\Admin\repo\questiontaker\feature\home\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
-com.questiontaker.feature.home-mergeDebugResources-3 C:\Users\Admin\repo\questiontaker\feature\home\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
-com.questiontaker.feature.home-debug-4 C:\Users\Admin\repo\questiontaker\feature\home\build\intermediates\merged_res\debug\mergeDebugResources
-com.questiontaker.feature.home-debug-5 C:\Users\Admin\repo\questiontaker\feature\home\build\intermediates\packaged_res\debug\packageDebugResources
-com.questiontaker.feature.home-debug-6 C:\Users\Admin\repo\questiontaker\feature\home\src\debug\res
-com.questiontaker.feature.home-main-7 C:\Users\Admin\repo\questiontaker\feature\home\src\main\res
