@@ -13,16 +13,51 @@ import javax.inject.Singleton
 class QuestionRepository @Inject constructor(
     @ApplicationContext private val context: Context
 ) {
-    private val questions: List<Question> by lazy {
-        loadQuestionsFromAssets()
-    }
+    @Volatile
+    private var questions: List<Question> = emptyList()
 
     private val sharedPrefs = context.getSharedPreferences("question_taker_prefs", Context.MODE_PRIVATE)
 
+    init {
+        // Load local asset questions synchronously first
+        questions = loadQuestionsFromAssets()
+
+        // Fetch latest questions from GitHub raw URL asynchronously in the background
+        Thread {
+            try {
+                val githubUrl = "https://raw.githubusercontent.com/JICA98/questiontaker/main/core/data/src/main/assets/questions.json"
+                val connection = java.net.URL(githubUrl).openConnection() as java.net.HttpURLConnection
+                connection.connectTimeout = 6000
+                connection.readTimeout = 6000
+                connection.requestMethod = "GET"
+                
+                if (connection.responseCode == 200) {
+                    val jsonString = connection.inputStream.bufferedReader().use { it.readText() }
+                    val newList = parseQuestionsJson(jsonString)
+                    if (newList.isNotEmpty()) {
+                        questions = newList
+                        android.util.Log.d("QuestionRepository", "Successfully synced ${newList.size} questions from GitHub")
+                    }
+                }
+            } catch (e: Exception) {
+                android.util.Log.e("QuestionRepository", "Failed to sync questions from GitHub, using local fallback", e)
+            }
+        }.start()
+    }
+
     private fun loadQuestionsFromAssets(): List<Question> {
+        return try {
+            val jsonString = context.assets.open("questions.json").bufferedReader().use { it.readText() }
+            parseQuestionsJson(jsonString)
+        } catch (e: IOException) {
+            e.printStackTrace()
+            emptyList()
+        }
+    }
+
+    private fun parseQuestionsJson(jsonString: String): List<Question> {
         val list = mutableListOf<Question>()
         try {
-            val jsonString = context.assets.open("questions.json").bufferedReader().use { it.readText() }
             val jsonArray = JSONArray(jsonString)
             for (i in 0 until jsonArray.length()) {
                 val jsonObject = jsonArray.getJSONObject(i)
@@ -60,7 +95,7 @@ class QuestionRepository @Inject constructor(
                     )
                 )
             }
-        } catch (e: IOException) {
+        } catch (e: Exception) {
             e.printStackTrace()
         }
         return list
