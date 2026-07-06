@@ -31,7 +31,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.platform.LocalContext
 import com.questiontaker.data.QuestionRepository
+import com.questiontaker.data.UpdateManager
 import com.questiontaker.data.model.Question
 import kotlinx.coroutines.delay
 
@@ -49,11 +51,34 @@ sealed interface Screen {
     object Bookmarks : Screen
 }
 
+data class UpdateInfo(
+    val tagName: String,
+    val downloadUrl: String,
+    val releaseNotes: String,
+    val isForceCheck: Boolean
+)
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeRoute(repository: QuestionRepository) {
     var currentScreen by remember { mutableStateOf<Screen>(Screen.Dashboard) }
     var isDarkTheme by remember { mutableStateOf(false) }
+    
+    val context = LocalContext.current
+    var updateDialogInfo by remember { mutableStateOf<UpdateInfo?>(null) }
+    var checkingForUpdates by remember { mutableStateOf(false) }
+    var showNoUpdateDialog by remember { mutableStateOf(false) }
+
+    // Auto-check for updates at startup
+    LaunchedEffect(Unit) {
+        UpdateManager.checkForUpdate(
+            context = context,
+            forceCheck = false,
+            onUpdateAvailable = { tagName, downloadUrl, releaseNotes ->
+                updateDialogInfo = UpdateInfo(tagName, downloadUrl, releaseNotes, isForceCheck = false)
+            }
+        )
+    }
 
     // Dynamic color container wrapper for interactive theme support
     val customThemeColors = if (isDarkTheme) {
@@ -92,7 +117,25 @@ fun HomeRoute(repository: QuestionRepository) {
                     onThemeToggle = { isDarkTheme = !isDarkTheme },
                     onNavigateToPractice = { source -> currentScreen = Screen.Practice(source) },
                     onNavigateToMock = { currentScreen = Screen.MockExam(30, 30) },
-                    onNavigateToBookmarks = { currentScreen = Screen.Bookmarks }
+                    onNavigateToBookmarks = { currentScreen = Screen.Bookmarks },
+                    onCheckForUpdates = {
+                        checkingForUpdates = true
+                        UpdateManager.checkForUpdate(
+                            context = context,
+                            forceCheck = true,
+                            onUpdateAvailable = { tagName, downloadUrl, releaseNotes ->
+                                checkingForUpdates = false
+                                updateDialogInfo = UpdateInfo(tagName, downloadUrl, releaseNotes, isForceCheck = true)
+                            },
+                            onNoUpdate = {
+                                checkingForUpdates = false
+                                showNoUpdateDialog = true
+                            }
+                        )
+                    },
+                    onOpenGitHub = {
+                        UpdateManager.openGitHub(context)
+                    }
                 )
                 is Screen.Practice -> PracticeScreen(
                     repository = repository,
@@ -119,6 +162,81 @@ fun HomeRoute(repository: QuestionRepository) {
                 )
             }
         }
+
+        // Dialogs for Updates
+        updateDialogInfo?.let { info ->
+            AlertDialog(
+                onDismissRequest = { updateDialogInfo = null },
+                title = { Text("New Update Available (${info.tagName})") },
+                text = {
+                    Column {
+                        Text("A new version of QuestionTaker is available. Would you like to update?")
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Text(
+                            text = "Release Notes:\n${info.releaseNotes}",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = Color.Gray
+                        )
+                    }
+                },
+                confirmButton = {
+                    Button(
+                        onClick = {
+                            UpdateManager.startDownload(context, info.downloadUrl, info.tagName)
+                            updateDialogInfo = null
+                        }
+                    ) {
+                        Text("Update Now")
+                    }
+                },
+                dismissButton = {
+                    Row {
+                        TextButton(
+                            onClick = {
+                                UpdateManager.skipVersion(context, info.tagName)
+                                updateDialogInfo = null
+                            }
+                        ) {
+                            Text("Skip this version")
+                        }
+                        Spacer(modifier = Modifier.width(8.dp))
+                        TextButton(onClick = { updateDialogInfo = null }) {
+                            Text("Later")
+                        }
+                    }
+                }
+            )
+        }
+
+        if (checkingForUpdates) {
+            AlertDialog(
+                onDismissRequest = {},
+                title = { Text("Checking for Updates") },
+                text = {
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(16.dp)
+                    ) {
+                        CircularProgressIndicator(color = MaterialTheme.colorScheme.primary)
+                        Text("Fetching latest release info...")
+                    }
+                },
+                confirmButton = {}
+            )
+        }
+
+        if (showNoUpdateDialog) {
+            AlertDialog(
+                onDismissRequest = { showNoUpdateDialog = false },
+                title = { Text("Up to Date") },
+                text = { Text("You are already on the latest version of QuestionTaker (${UpdateManager.getCurrentVersion(context)}).") },
+                confirmButton = {
+                    Button(onClick = { showNoUpdateDialog = false }) {
+                        Text("OK")
+                    }
+                }
+            )
+        }
     }
 }
 
@@ -132,7 +250,9 @@ fun DashboardScreen(
     onThemeToggle: () -> Unit,
     onNavigateToPractice: (String?) -> Unit,
     onNavigateToMock: () -> Unit,
-    onNavigateToBookmarks: () -> Unit
+    onNavigateToBookmarks: () -> Unit,
+    onCheckForUpdates: () -> Unit,
+    onOpenGitHub: () -> Unit
 ) {
     val totalQuestions = repository.getAllQuestions().size
     val completedCount = repository.getCompletedQuestionsCount()
@@ -402,21 +522,48 @@ fun DashboardScreen(
                 }
             }
         }
-        
-        // Reset statistics item at bottom
+        // Check for updates, Open GitHub, Reset progress at bottom
         item {
-            Box(
+            Column(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(vertical = 16.dp),
-                contentAlignment = Alignment.Center
+                    .padding(top = 16.dp, bottom = 24.dp),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-                Button(
-                    onClick = { repository.resetStats() },
-                    colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.05f), contentColor = Color.Red),
-                    shape = RoundedCornerShape(8.dp)
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(12.dp)
                 ) {
-                    Text("Reset Study Progress", fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                    Button(
+                        onClick = onCheckForUpdates,
+                        modifier = Modifier.weight(1f),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.1f),
+                            contentColor = MaterialTheme.colorScheme.primary
+                        ),
+                        shape = RoundedCornerShape(12.dp)
+                    ) {
+                        Text("Check for Updates", fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
+                    }
+                    Button(
+                        onClick = onOpenGitHub,
+                        modifier = Modifier.weight(1f),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.05f),
+                            contentColor = MaterialTheme.colorScheme.onSurface
+                        ),
+                        shape = RoundedCornerShape(12.dp)
+                    ) {
+                        Text("Open GitHub", fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
+                    }
+                }
+                
+                TextButton(
+                    onClick = { repository.resetStats() },
+                    modifier = Modifier.padding(top = 8.dp)
+                ) {
+                    Text("Reset Study Progress", color = Color.Red.copy(alpha = 0.7f), fontSize = 12.sp)
                 }
             }
         }
