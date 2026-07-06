@@ -10,6 +10,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.itemsIndexed
@@ -366,22 +367,24 @@ fun DashboardScreen(
                             maxLines = 2,
                             overflow = TextOverflow.Ellipsis
                         )
-                        Row(
+                        LazyRow(
                             modifier = Modifier.padding(top = 6.dp),
+                            horizontalArrangement = Arrangement.spacedBy(6.dp),
                             verticalAlignment = Alignment.CenterVertically
                         ) {
-                            Surface(
-                                shape = RoundedCornerShape(4.dp),
-                                color = MaterialTheme.colorScheme.primary.copy(alpha = 0.1f)
-                            ) {
-                                Text(
-                                    text = getDisplaySourceDescription(source),
-                                    fontSize = 11.sp,
-                                    color = MaterialTheme.colorScheme.primary,
-                                    modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp),
-                                    maxLines = 1,
-                                    overflow = TextOverflow.Ellipsis
-                                )
+                            items(getDisplaySourceDescription(source)) { tag ->
+                                Surface(
+                                    shape = RoundedCornerShape(4.dp),
+                                    color = MaterialTheme.colorScheme.primary.copy(alpha = 0.1f)
+                                ) {
+                                    Text(
+                                        text = tag,
+                                        fontSize = 11.sp,
+                                        color = MaterialTheme.colorScheme.primary,
+                                        modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp),
+                                        maxLines = 1
+                                    )
+                                }
                             }
                         }
                         Text(
@@ -1404,23 +1407,23 @@ fun getDisplaySourceName(rawSource: String?): String {
     }
 }
 
-fun getDisplaySourceDescription(rawSource: String?): String {
-    if (rawSource == null) return "Mixed Questions"
+fun getDisplaySourceDescription(rawSource: String?): List<String> {
+    if (rawSource == null) return listOf("Mixed Topics", "Random", "Comprehensive")
     return when (rawSource) {
-        "AIIMS CRE Anesthesia MCQs" -> "General Anesthesia Concepts"
-        "AIIMS CRE Complete 115 MCQ" -> "Comprehensive Exam Review"
-        "AIIMS CRE Anesthesia MCQs Complete" -> "Anesthesia Complete Set"
-        "AIIMS CRE OT Technician PYQ-v2" -> "Previous Year Questions V2"
-        "AIIMS CRE OT Technician PYQ Part5" -> "Previous Year Questions Part 5"
-        "OT Technician Exam Prep" -> "OT Technician Exam Prep"
-        "AIIMS CRE OT Technician Questions" -> "OT Technician Core Questions"
-        "AIIMS CRE OT Technician Prep" -> "OT Technician Pre-exam Review"
-        "anesthesia ot technician exam part 10" -> "Anesthesia & OT Concepts Part 10"
-        "Anesthesia OT Technician MCQs" -> "Anesthesia & OT Mixed MCQs"
-        "AIIMS CRE OT Technician Part 12" -> "OT Technician Concepts Part 12"
-        "anesthesia ot technician questions" -> "Anesthesia & OT Practice Set"
-        "AIIMS CRE OT Anaesthesia Technician 100 Practice Questions" -> "100-Question Practice Set"
-        "AIIMS CRE OT Anaesthesia Practice Paper 100Q" -> "Full 100-Question Practice Paper"
-        else -> "Practice Paper"
+        "AIIMS CRE Anesthesia MCQs" -> listOf("Capnography", "Airway Devices", "Medical Gases", "Pharmacology")
+        "AIIMS CRE Complete 115 MCQ" -> listOf("Airway Management", "Intubation", "Laryngoscopy", "Supraglottic Devices")
+        "AIIMS CRE Anesthesia MCQs Complete" -> listOf("Pharmacology", "Capnography", "Fluid Therapy", "Airway Complications")
+        "AIIMS CRE OT Technician PYQ-v2" -> listOf("Preoxygenation", "Pre-op Fasting", "Anaphylaxis", "Induction Agents")
+        "AIIMS CRE OT Technician PYQ Part5" -> listOf("General Knowledge", "Mathematics", "Aptitude", "Logical Reasoning")
+        "OT Technician Exam Prep" -> listOf("Gas Cylinders", "Physics in Anesthesia", "Airway Equipment", "Vitals")
+        "AIIMS CRE OT Technician Questions" -> listOf("General Anatomy", "Waste Management", "Breathing Circuits", "Critical Care")
+        "AIIMS CRE OT Technician Prep" -> listOf("Anesthesia Equipment", "Pharmacology", "Monitoring", "Physics")
+        "anesthesia ot technician exam part 10" -> listOf("Anesthesia Equipment", "Pharmacology", "Monitoring", "Physics")
+        "Anesthesia OT Technician MCQs" -> listOf("Anesthesia Machine", "Capnography", "Airway Complications", "Surgical Setup")
+        "AIIMS CRE OT Technician Part 12" -> listOf("Gas Cylinders", "Muscle Relaxants", "Sterilization", "OT Environment")
+        "anesthesia ot technician questions" -> listOf("Human Anatomy", "Physiology", "Blood & Circulation", "Nervous System")
+        "AIIMS CRE OT Anaesthesia Technician 100 Practice Questions" -> listOf("OT Design & Zones", "Sterilization", "Biomedical Waste", "Infection Control")
+        "AIIMS CRE OT Anaesthesia Practice Paper 100Q" -> listOf("Sterilization", "Surgical Instruments", "Fumigation", "Waste Management")
+        else -> listOf("Practice Paper")
     }
 }
