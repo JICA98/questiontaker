@@ -1,0 +1,4 @@
+com.questiontaker
+drawable app_logo
+string app_name
+style Theme_questiontaker
