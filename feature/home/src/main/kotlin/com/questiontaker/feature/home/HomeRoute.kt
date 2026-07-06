@@ -366,11 +366,29 @@ fun DashboardScreen(
                             maxLines = 2,
                             overflow = TextOverflow.Ellipsis
                         )
+                        Row(
+                            modifier = Modifier.padding(top = 6.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Surface(
+                                shape = RoundedCornerShape(4.dp),
+                                color = MaterialTheme.colorScheme.primary.copy(alpha = 0.1f)
+                            ) {
+                                Text(
+                                    text = getDisplaySourceDescription(source),
+                                    fontSize = 11.sp,
+                                    color = MaterialTheme.colorScheme.primary,
+                                    modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp),
+                                    maxLines = 1,
+                                    overflow = TextOverflow.Ellipsis
+                                )
+                            }
+                        }
                         Text(
                             text = "$count MCQs available",
                             fontSize = 13.sp,
                             color = Color.Gray,
-                            modifier = Modifier.padding(top = 4.dp)
+                            modifier = Modifier.padding(top = 6.dp)
                         )
                     }
                     Text(
@@ -1383,5 +1401,26 @@ fun getDisplaySourceName(rawSource: String?): String {
         "AIIMS CRE OT Anaesthesia Technician 100 Practice Questions" -> "Part 13"
         "AIIMS CRE OT Anaesthesia Practice Paper 100Q" -> "Part 14"
         else -> rawSource
+    }
+}
+
+fun getDisplaySourceDescription(rawSource: String?): String {
+    if (rawSource == null) return "Mixed Questions"
+    return when (rawSource) {
+        "AIIMS CRE Anesthesia MCQs" -> "General Anesthesia Concepts"
+        "AIIMS CRE Complete 115 MCQ" -> "Comprehensive Exam Review"
+        "AIIMS CRE Anesthesia MCQs Complete" -> "Anesthesia Complete Set"
+        "AIIMS CRE OT Technician PYQ-v2" -> "Previous Year Questions V2"
+        "AIIMS CRE OT Technician PYQ Part5" -> "Previous Year Questions Part 5"
+        "OT Technician Exam Prep" -> "OT Technician Exam Prep"
+        "AIIMS CRE OT Technician Questions" -> "OT Technician Core Questions"
+        "AIIMS CRE OT Technician Prep" -> "OT Technician Pre-exam Review"
+        "anesthesia ot technician exam part 10" -> "Anesthesia & OT Concepts Part 10"
+        "Anesthesia OT Technician MCQs" -> "Anesthesia & OT Mixed MCQs"
+        "AIIMS CRE OT Technician Part 12" -> "OT Technician Concepts Part 12"
+        "anesthesia ot technician questions" -> "Anesthesia & OT Practice Set"
+        "AIIMS CRE OT Anaesthesia Technician 100 Practice Questions" -> "100-Question Practice Set"
+        "AIIMS CRE OT Anaesthesia Practice Paper 100Q" -> "Full 100-Question Practice Paper"
+        else -> "Practice Paper"
     }
 }
