@@ -19167,5 +19167,705 @@
       "AIIMS CRE OT Technician Prep"
     ],
     "id": 708
+  },
+  {
+    "question": "Regarding the Structure of an Animal Cell, which organelle is primarily responsible for protein synthesis?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Mitochondria"
+      },
+      {
+        "key": "B",
+        "text": "Ribosomes"
+      },
+      {
+        "key": "C",
+        "text": "Golgi Apparatus"
+      },
+      {
+        "key": "D",
+        "text": "Lysosomes"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Ribosomes are the cellular structures responsible for protein synthesis. They can be found floating freely in the cytoplasm or attached to the rough endoplasmic reticulum in an animal cell.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 709
+  },
+  {
+    "question": "How many vertebrae are present in the cervical region of the human Vertebral Column?",
+    "options": [
+      {
+        "key": "A",
+        "text": "5"
+      },
+      {
+        "key": "B",
+        "text": "7"
+      },
+      {
+        "key": "C",
+        "text": "12"
+      },
+      {
+        "key": "D",
+        "text": "4"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The human vertebral column is divided into regions. There are 7 cervical vertebrae (C1-C7) in the neck, 12 thoracic, 5 lumbar, 5 fused sacral, and 4 fused coccygeal vertebrae.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 710
+  },
+  {
+    "question": "The Sternum, an important bone in the thoracic region, is commonly known as what?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Collarbone"
+      },
+      {
+        "key": "B",
+        "text": "Breastbone"
+      },
+      {
+        "key": "C",
+        "text": "Shoulder blade"
+      },
+      {
+        "key": "D",
+        "text": "Thighbone"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The sternum is commonly referred to as the breastbone. It is a long, flat bone located in the center of the chest and serves to protect the heart, lungs, and blood vessels.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 711
+  },
+  {
+    "question": "Within the Bronchial Tree, which of the following structures is the actual site of gas exchange?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Trachea"
+      },
+      {
+        "key": "B",
+        "text": "Primary bronchi"
+      },
+      {
+        "key": "C",
+        "text": "Terminal bronchioles"
+      },
+      {
+        "key": "D",
+        "text": "Alveoli"
+      }
+    ],
+    "answer": "D",
+    "explanation": "While the trachea, primary bronchi, and terminal bronchioles serve as conducting airways to transport air, the alveoli are the tiny air sacs where the actual exchange of oxygen and carbon dioxide occurs with the blood.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 712
+  },
+  {
+    "question": "Based on the Structure of the Heart, which valve separates the left atrium from the left ventricle?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tricuspid valve"
+      },
+      {
+        "key": "B",
+        "text": "Mitral (Bicuspid) valve"
+      },
+      {
+        "key": "C",
+        "text": "Pulmonary valve"
+      },
+      {
+        "key": "D",
+        "text": "Aortic valve"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The mitral valve, also known as the bicuspid valve, lies between the left atrium and the left ventricle. It prevents the backflow of oxygenated blood into the atrium during ventricular contraction.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 713
+  },
+  {
+    "question": "Which of the following is a primary muscle located in the anterior compartment of the arm that flexes the forearm?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Triceps brachii"
+      },
+      {
+        "key": "B",
+        "text": "Biceps brachii"
+      },
+      {
+        "key": "C",
+        "text": "Deltoid"
+      },
+      {
+        "key": "D",
+        "text": "Trapezius"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The biceps brachii (along with the brachialis and brachioradialis) is a primary flexor muscle of the forearm located in the anterior compartment of the arm.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 714
+  },
+  {
+    "question": "The thick layer of smooth muscle that forms the wall of the Urinary Bladder and contracts during urination is called the:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Detrusor muscle"
+      },
+      {
+        "key": "B",
+        "text": "Trigone"
+      },
+      {
+        "key": "C",
+        "text": "Internal sphincter"
+      },
+      {
+        "key": "D",
+        "text": "Ureter"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The detrusor muscle consists of smooth muscle fibers in the wall of the urinary bladder. Its relaxation allows the bladder to store urine, and its contraction expels urine during micturition.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 715
+  },
+  {
+    "question": "Mitochondria are often referred to as the powerhouse of the cell because they are the primary site for the generation of:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Deoxyribonucleic acid (DNA)"
+      },
+      {
+        "key": "B",
+        "text": "Adenosine triphosphate (ATP)"
+      },
+      {
+        "key": "C",
+        "text": "Messenger RNA (mRNA)"
+      },
+      {
+        "key": "D",
+        "text": "Glucose"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Mitochondria generate most of the chemical energy needed to power the cell's biochemical reactions. This chemical energy is stored in a small molecule called adenosine triphosphate (ATP).",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 716
+  },
+  {
+    "question": "Alkalosis is a clinical condition characterized by an abnormal increase in blood pH. Which of the following pH values indicates alkalosis?",
+    "options": [
+      {
+        "key": "A",
+        "text": "7.30"
+      },
+      {
+        "key": "B",
+        "text": "7.35"
+      },
+      {
+        "key": "C",
+        "text": "7.40"
+      },
+      {
+        "key": "D",
+        "text": "7.50"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The normal arterial blood pH is tightly regulated between 7.35 and 7.45. A pH value above 7.45 indicates alkalemia/alkalosis, meaning the blood is overly basic.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 717
+  },
+  {
+    "question": "Regarding the Composition of Blood, what is the approximate percentage of plasma in total blood volume in a healthy adult?",
+    "options": [
+      {
+        "key": "A",
+        "text": "25%"
+      },
+      {
+        "key": "B",
+        "text": "45%"
+      },
+      {
+        "key": "C",
+        "text": "55%"
+      },
+      {
+        "key": "D",
+        "text": "75%"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Blood is composed of formed elements (red blood cells, white blood cells, and platelets) which make up about 45%, and blood plasma, a yellowish liquid component, which makes up about 55% of the total blood volume.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 718
+  },
+  {
+    "question": "What is the primary function of Hemoglobin found in erythrocytes?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Phagocytosis of pathogens"
+      },
+      {
+        "key": "B",
+        "text": "Transport of oxygen to tissues"
+      },
+      {
+        "key": "C",
+        "text": "Initiation of blood coagulation"
+      },
+      {
+        "key": "D",
+        "text": "Production of antibodies"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Hemoglobin is an iron-containing protein in red blood cells that reversibly binds to oxygen in the lungs and transports it to the various tissues and organs of the body.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 719
+  },
+  {
+    "question": "An elevated Erythrocyte Sedimentation Rate (ESR) is a non-specific laboratory marker most commonly indicative of:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hypocalcemia"
+      },
+      {
+        "key": "B",
+        "text": "Inflammation or infection"
+      },
+      {
+        "key": "C",
+        "text": "Polycythemia vera"
+      },
+      {
+        "key": "D",
+        "text": "Hypoglycemia"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The Erythrocyte Sedimentation Rate (ESR) measures how quickly red blood cells settle at the bottom of a test tube. Inflammation leads to an increase in proteins like fibrinogen, making red blood cells clump together and settle faster, yielding an elevated ESR.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 720
+  },
+  {
+    "question": "Thrombocytosis is defined as a pathological or physiological condition where there is an abnormally high count of:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Red Blood Cells"
+      },
+      {
+        "key": "B",
+        "text": "White Blood Cells"
+      },
+      {
+        "key": "C",
+        "text": "Platelets"
+      },
+      {
+        "key": "D",
+        "text": "Plasma Proteins"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Thrombocytes are platelets. Therefore, thrombocytosis (or thrombocythemia) is a condition characterized by excessive numbers of platelets in the blood, which can increase the risk of abnormal blood clotting.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 721
+  },
+  {
+    "question": "In the ABO and Rh blood group systems, which blood type is universally known as the universal donor, particularly in emergency situations?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AB Positive"
+      },
+      {
+        "key": "B",
+        "text": "O Negative"
+      },
+      {
+        "key": "C",
+        "text": "A Positive"
+      },
+      {
+        "key": "D",
+        "text": "O Positive"
+      }
+    ],
+    "answer": "B",
+    "explanation": "O negative blood lacks A, B, and Rh antigens on the surface of its red blood cells, making it the safest blood type to transfuse to anyone in extreme emergencies because it is least likely to cause an immune reaction.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 722
+  },
+  {
+    "question": "During ventricular systole of the Cardiac Cycle, which valves must close to prevent the backflow of blood into the atria?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Aortic and pulmonary valves"
+      },
+      {
+        "key": "B",
+        "text": "Mitral and tricuspid valves"
+      },
+      {
+        "key": "C",
+        "text": "Aortic and mitral valves"
+      },
+      {
+        "key": "D",
+        "text": "Pulmonary and tricuspid valves"
+      }
+    ],
+    "answer": "B",
+    "explanation": "During ventricular systole, the ventricles contract, raising pressure. The atrioventricular (mitral and tricuspid) valves snap shut (creating the first heart sound, S1) to prevent blood from flowing backward into the atria.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 723
+  },
+  {
+    "question": "Hypertension is generally defined as consistently elevated blood pressure. According to standard definitions, a blood pressure reading of 140/90 mmHg is considered:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Normal"
+      },
+      {
+        "key": "B",
+        "text": "Hypotension"
+      },
+      {
+        "key": "C",
+        "text": "Hypertension"
+      },
+      {
+        "key": "D",
+        "text": "Elevated but not hypertensive"
+      }
+    ],
+    "answer": "C",
+    "explanation": "While guidelines differ slightly (AHA now uses 130/80 as stage 1), a reading of 140/90 mmHg is classically defined as hypertension. Normal blood pressure is universally recognized as less than 120/80 mmHg.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 724
+  },
+  {
+    "question": "On a normal Electrocardiogram (ECG) tracing, the P wave represents which physiological event in the cardiac cycle?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ventricular depolarization"
+      },
+      {
+        "key": "B",
+        "text": "Ventricular repolarization"
+      },
+      {
+        "key": "C",
+        "text": "Atrial depolarization"
+      },
+      {
+        "key": "D",
+        "text": "Atrial repolarization"
+      }
+    ],
+    "answer": "C",
+    "explanation": "In an ECG, the P wave reflects the electrical depolarization of the atria, which is immediately followed by atrial contraction.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 725
+  },
+  {
+    "question": "Among common Lung Function Tests, what term describes the maximum volume of air that can be forcibly exhaled after taking the deepest possible breath?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tidal Volume (TV)"
+      },
+      {
+        "key": "B",
+        "text": "Forced Vital Capacity (FVC)"
+      },
+      {
+        "key": "C",
+        "text": "Residual Volume (RV)"
+      },
+      {
+        "key": "D",
+        "text": "Functional Residual Capacity (FRC)"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Forced Vital Capacity (FVC) is the total amount of air exhaled during the FEV (forced expiratory volume) test. It is a critical parameter in diagnosing obstructive and restrictive lung diseases.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 726
+  },
+  {
+    "question": "A hallmark laboratory finding indicating Acute Renal Failure (Acute Kidney Injury) is an abrupt elevation in serum levels of:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Calcium"
+      },
+      {
+        "key": "B",
+        "text": "Glucose"
+      },
+      {
+        "key": "C",
+        "text": "Creatinine and Blood Urea Nitrogen (BUN)"
+      },
+      {
+        "key": "D",
+        "text": "Albumin"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Acute renal failure is characterized by a rapid decline in kidney function, resulting in the retention of nitrogenous wastes. This manifests as elevated serum creatinine and Blood Urea Nitrogen (BUN) levels (azotemia).",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 727
+  },
+  {
+    "question": "In the male reproductive system, the physiological process of Spermatogenesis specifically occurs in the:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Epididymis"
+      },
+      {
+        "key": "B",
+        "text": "Seminiferous tubules"
+      },
+      {
+        "key": "C",
+        "text": "Prostate gland"
+      },
+      {
+        "key": "D",
+        "text": "Vas deferens"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Spermatogenesis is the process by which sperm cell production occurs. This happens within the tightly coiled seminiferous tubules located inside the testes.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 728
+  },
+  {
+    "question": "Which dietary trace mineral is absolutely essential for the Thyroid Gland to synthesize the thyroid hormones T3 and T4?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Iron"
+      },
+      {
+        "key": "B",
+        "text": "Zinc"
+      },
+      {
+        "key": "C",
+        "text": "Iodine"
+      },
+      {
+        "key": "D",
+        "text": "Magnesium"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Iodine is a crucial structural component of the thyroid hormones thyroxine (T4) and triiodothyronine (T3). Without adequate iodine, the thyroid cannot produce sufficient hormones, often leading to a goiter or hypothyroidism.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 729
+  },
+  {
+    "question": "Regarding various endocrine hormones, which of the following is synthesized in the hypothalamus but stored and released by the posterior pituitary gland?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Growth Hormone (GH)"
+      },
+      {
+        "key": "B",
+        "text": "Thyroid-Stimulating Hormone (TSH)"
+      },
+      {
+        "key": "C",
+        "text": "Oxytocin"
+      },
+      {
+        "key": "D",
+        "text": "Prolactin"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Oxytocin (along with Antidiuretic Hormone, ADH) is produced by the neurosecretory cells in the hypothalamus and is transported down axons to the posterior pituitary, where it is stored until released into the bloodstream.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 730
+  },
+  {
+    "question": "Among the various routes of Drug Administration, which route guarantees 100% bioavailability of the drug in systemic circulation immediately after administration?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Oral (PO)"
+      },
+      {
+        "key": "B",
+        "text": "Intramuscular (IM)"
+      },
+      {
+        "key": "C",
+        "text": "Subcutaneous (SC)"
+      },
+      {
+        "key": "D",
+        "text": "Intravenous (IV)"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Intravenous (IV) administration delivers the drug directly into the bloodstream, bypassing all barriers to absorption and the first-pass metabolism in the liver. Thus, its bioavailability is exactly 100%.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 731
+  },
+  {
+    "question": "Adverse Drug Reactions can be classified into different types. An unpredictable, idiosyncratic, or allergic reaction that is not dose-dependent is referred to as:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Type A reaction"
+      },
+      {
+        "key": "B",
+        "text": "Type B reaction"
+      },
+      {
+        "key": "C",
+        "text": "Type C reaction"
+      },
+      {
+        "key": "D",
+        "text": "Type D reaction"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Type B (Bizarre) adverse drug reactions are unpredictable, idiosyncratic, and not related to the drug's known pharmacological action. Allergies and hypersensitivity fall into this category.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 732
+  },
+  {
+    "question": "Which of the following physical factors severely limits the drug distribution of a medication into the central nervous system (CNS)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "High lipid solubility"
+      },
+      {
+        "key": "B",
+        "text": "Blood-Brain Barrier (BBB)"
+      },
+      {
+        "key": "C",
+        "text": "Low molecular weight"
+      },
+      {
+        "key": "D",
+        "text": "Extensive tissue perfusion"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The blood-brain barrier (BBB) is a highly selective semipermeable border of endothelial cells that prevents solutes in the circulating blood from non-selectively crossing into the extracellular fluid of the central nervous system. Only highly lipid-soluble and un-ionized drugs typically cross it easily.",
+    "sources": [
+      "Anesthesia technician 1st year Question paper Paper -A",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 733
   }
 ]
