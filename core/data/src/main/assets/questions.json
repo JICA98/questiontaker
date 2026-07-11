@@ -18887,5 +18887,285 @@
       "AIIMS CRE OT Technician Prep"
     ],
     "id": 698
+  },
+  {
+    "question": "Which device is primarily used to deliver oxygen and anesthetic gases to the patient?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Suction apparatus"
+      },
+      {
+        "key": "B",
+        "text": "Anesthesia machine"
+      },
+      {
+        "key": "C",
+        "text": "Defibrillator"
+      },
+      {
+        "key": "D",
+        "text": "Infusion pump"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The anesthesia machine is specifically designed to provide a continuous, accurate supply of medical gases (such as oxygen and nitrous oxide) mixed with anesthetic vapors, which are delivered to the patient at a safe pressure and flow.",
+    "sources": [
+      "anesthesia ot technician exam part 18",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 699
+  },
+  {
+    "question": "What is the normal oxygen saturation level in a healthy adult?",
+    "options": [
+      {
+        "key": "A",
+        "text": "80 to 85%"
+      },
+      {
+        "key": "B",
+        "text": "85 to 90%"
+      },
+      {
+        "key": "C",
+        "text": "95 to 100%"
+      },
+      {
+        "key": "D",
+        "text": "Below 90%"
+      }
+    ],
+    "answer": "C",
+    "explanation": "In a healthy adult, normal oxygen saturation (SpO2) measured by a pulse oximeter ranges between 95% and 100%. Levels below 90% indicate hypoxemia and require medical intervention.",
+    "sources": [
+      "anesthesia ot technician exam part 18",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 700
+  },
+  {
+    "question": "Which drug is commonly used as an induction agent for general anesthesia?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Atropine"
+      },
+      {
+        "key": "B",
+        "text": "Propofol"
+      },
+      {
+        "key": "C",
+        "text": "Paracetamol"
+      },
+      {
+        "key": "D",
+        "text": "Adrenaline"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Propofol is an intravenous medication widely used for the induction and maintenance of general anesthesia due to its rapid onset and fast recovery profile. Atropine, paracetamol, and adrenaline serve different medical purposes.",
+    "sources": [
+      "anesthesia ot technician exam part 18",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 701
+  },
+  {
+    "question": "What is the purpose of pre-oxygenation before induction of anesthesia?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To increase blood pressure"
+      },
+      {
+        "key": "B",
+        "text": "To reduce heart rate"
+      },
+      {
+        "key": "C",
+        "text": "To increase oxygen reserve in the lungs"
+      },
+      {
+        "key": "D",
+        "text": "To induce sleep"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Pre-oxygenation denitrogenates the functional residual capacity (FRC) of the lungs, replacing nitrogen with oxygen. This builds an oxygen reserve, delaying the onset of hypoxia during the apnea that occurs during airway management (intubation).",
+    "sources": [
+      "anesthesia ot technician exam part 18",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 702
+  },
+  {
+    "question": "Which airway device is most commonly used during short surgical procedures?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Endotracheal tube"
+      },
+      {
+        "key": "B",
+        "text": "Tracheostomy tube"
+      },
+      {
+        "key": "C",
+        "text": "Laryngeal mask airway"
+      },
+      {
+        "key": "D",
+        "text": "Nasogastric tube"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The Laryngeal Mask Airway (LMA) is a supraglottic airway device that is quick to insert and less invasive than an endotracheal tube, making it the preferred choice for short, routine surgical procedures where profound muscle relaxation isn't required.",
+    "sources": [
+      "anesthesia ot technician exam part 18",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 703
+  },
+  {
+    "question": "Which monitor is essential to measure the patient's heart rate and rhythm?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Pulse oximeter"
+      },
+      {
+        "key": "B",
+        "text": "ECG monitor"
+      },
+      {
+        "key": "C",
+        "text": "Capnography"
+      },
+      {
+        "key": "D",
+        "text": "Thermometer"
+      }
+    ],
+    "answer": "B",
+    "explanation": "An Electrocardiogram (ECG) monitor tracks the electrical activity of the heart. It is the definitive and essential monitor used to continuously assess heart rate and detect any cardiac arrhythmias or rhythmic abnormalities during surgery.",
+    "sources": [
+      "anesthesia ot technician exam part 18",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 704
+  },
+  {
+    "question": "What does capnography mainly measure?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Oxygen saturation"
+      },
+      {
+        "key": "B",
+        "text": "Blood pressure"
+      },
+      {
+        "key": "C",
+        "text": "End-tidal carbon dioxide"
+      },
+      {
+        "key": "D",
+        "text": "Body temperature"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Capnography is the non-invasive measurement of the partial pressure of carbon dioxide (CO2) in the exhaled breath, known as End-Tidal Carbon Dioxide (EtCO2). It is crucial for confirming adequate ventilation.",
+    "sources": [
+      "anesthesia ot technician exam part 18",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 705
+  },
+  {
+    "question": "Which complication can occur if anesthesia depth is inadequate?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hypothermia"
+      },
+      {
+        "key": "B",
+        "text": "Awareness during surgery"
+      },
+      {
+        "key": "C",
+        "text": "Hypotension"
+      },
+      {
+        "key": "D",
+        "text": "Bradycardia"
+      }
+    ],
+    "answer": "B",
+    "explanation": "If a patient is not adequately anesthetized (inadequate depth of anesthesia), they might experience intraoperative awareness, which means they could regain consciousness or form memories during the surgical procedure.",
+    "sources": [
+      "anesthesia ot technician exam part 18",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 706
+  },
+  {
+    "question": "What is the role of an anesthesia technician during surgery?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Performing the surgery"
+      },
+      {
+        "key": "B",
+        "text": "Administering anesthesia independently"
+      },
+      {
+        "key": "C",
+        "text": "Assisting the anesthesiologist and managing equipment"
+      },
+      {
+        "key": "D",
+        "text": "Prescribing medications"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Anesthesia technicians are vital allied healthcare professionals who prepare and maintain anesthesia equipment, stock supplies, and directly assist the anesthesiologist in managing the patient and monitoring devices during surgical cases.",
+    "sources": [
+      "anesthesia ot technician exam part 18",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 707
+  },
+  {
+    "question": "Which gas is commonly used for maintenance of general anesthesia?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Oxygen only"
+      },
+      {
+        "key": "B",
+        "text": "Nitrous oxide"
+      },
+      {
+        "key": "C",
+        "text": "Carbon dioxide"
+      },
+      {
+        "key": "D",
+        "text": "Nitrogen"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Nitrous oxide, often mixed with oxygen and other volatile anesthetic agents, is commonly used to maintain general anesthesia. It provides analgesic effects and reduces the required dose of more potent anesthetic drugs.",
+    "sources": [
+      "anesthesia ot technician exam part 18",
+      "AIIMS CRE OT Technician Prep"
+    ],
+    "id": 708
   }
 ]
