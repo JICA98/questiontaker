@@ -17080,5 +17080,1112 @@
       "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
     ],
     "id": 632
+  },
+  {
+    "question": "Which cranial nerve contains both motor and sensory fibers?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Optic"
+      },
+      {
+        "key": "B",
+        "text": "Facial"
+      },
+      {
+        "key": "C",
+        "text": "Vagus"
+      },
+      {
+        "key": "D",
+        "text": "Both B and C"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Cranial nerves like the Facial (VII) and Vagus (X) nerves are mixed nerves, meaning they contain both motor fibers (responsible for muscle movement) and sensory fibers (responsible for sensations like taste and general sensation). The Optic nerve (II) is purely sensory.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 633
+  },
+  {
+    "question": "The layer of coronary arteries containing smooth muscle fibers is:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tunica Intima"
+      },
+      {
+        "key": "B",
+        "text": "Tunica Media"
+      },
+      {
+        "key": "C",
+        "text": "Tunica Adventitia"
+      },
+      {
+        "key": "D",
+        "text": "Tunica Latrina"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The Tunica Media is the middle layer of blood vessels (including coronary arteries). It is predominantly composed of smooth muscle cells and elastic fibers, allowing the arteries to contract (vasoconstriction) and dilate (vasodilation).",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 634
+  },
+  {
+    "question": "Which arteriole brings blood to Bowman's capsule?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Afferent arteriole"
+      },
+      {
+        "key": "B",
+        "text": "Efferent arteriole"
+      },
+      {
+        "key": "C",
+        "text": "Exerent arteriole"
+      },
+      {
+        "key": "D",
+        "text": "Axillary arteriole"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The afferent arteriole is responsible for carrying blood into the glomerulus enclosed within Bowman's capsule in the nephron for the process of ultrafiltration. The efferent arteriole carries the filtered blood away.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 635
+  },
+  {
+    "question": "A localized breach in surface continuity of the skin and mucous membrane is called:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ulcer"
+      },
+      {
+        "key": "B",
+        "text": "Thrombosis"
+      },
+      {
+        "key": "C",
+        "text": "Embolism"
+      },
+      {
+        "key": "D",
+        "text": "Sinus"
+      }
+    ],
+    "answer": "A",
+    "explanation": "An ulcer is defined as a discontinuity or break in a bodily membrane that impedes the normal function of the affected organ. This localized destruction of the mucous membrane or skin is often accompanied by inflammation.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 636
+  },
+  {
+    "question": "A cell body or perikaryon having a central nucleus and Nissl granules in its cytoplasm is known as:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Brain"
+      },
+      {
+        "key": "B",
+        "text": "Neuron"
+      },
+      {
+        "key": "C",
+        "text": "Spinal cord"
+      },
+      {
+        "key": "D",
+        "text": "Spinal nerve"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A neuron is the fundamental functional unit of the nervous system. Its cell body (soma or perikaryon) contains a prominent central nucleus and rough endoplasmic reticulum structures called Nissl granules.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 637
+  },
+  {
+    "question": "Which cells are derived from monocytes that migrate from blood into the nervous system before birth?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Neuroglia"
+      },
+      {
+        "key": "B",
+        "text": "Astrocytes"
+      },
+      {
+        "key": "C",
+        "text": "Oligodendrocytes"
+      },
+      {
+        "key": "D",
+        "text": "Microglia"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Microglial cells act as the primary immune defense mechanism in the central nervous system (CNS). Unlike other glial cells, they are of embryonic mesoderm origin, directly differentiating from circulating monocytes.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 638
+  },
+  {
+    "question": "Which hormones are synthesized by the adrenal medulla?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Epinephrine and norepinephrine"
+      },
+      {
+        "key": "B",
+        "text": "Thyroxine"
+      },
+      {
+        "key": "C",
+        "text": "Cortisol and Corticosterone"
+      },
+      {
+        "key": "D",
+        "text": "Pregnenolone and Progesterone"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The adrenal medulla (the inner core of the adrenal gland) is responsible for producing the catecholamines epinephrine (adrenaline) and norepinephrine (noradrenaline), which manage the body's 'fight or flight' response.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 639
+  },
+  {
+    "question": "What is the main cause of the second heart sound?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Closure of semilunar valves"
+      },
+      {
+        "key": "B",
+        "text": "Opening of semilunar valves"
+      },
+      {
+        "key": "C",
+        "text": "Closing of AV valves"
+      },
+      {
+        "key": "D",
+        "text": "Opening of AV valves"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The second heart sound (S2), often described as a 'dub' sound, is caused by the sudden closure of the semilunar valves (aortic and pulmonary valves) at the end of ventricular contraction (systole).",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 640
+  },
+  {
+    "question": "CSF is produced by:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Spinal cord"
+      },
+      {
+        "key": "B",
+        "text": "Cisterna magna"
+      },
+      {
+        "key": "C",
+        "text": "Choroid plexus"
+      },
+      {
+        "key": "D",
+        "text": "Cerebellum"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Cerebrospinal Fluid (CSF) is an ultrafiltrate of blood plasma produced primarily by the choroid plexus, which is a network of blood vessels and ependymal cells located in the ventricles of the brain.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 641
+  },
+  {
+    "question": "Which coagulation factor is responsible for hemophilia?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Fibrinogen"
+      },
+      {
+        "key": "B",
+        "text": "Thromboplastin"
+      },
+      {
+        "key": "C",
+        "text": "Factor VIII"
+      },
+      {
+        "key": "D",
+        "text": "Thrombin"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Hemophilia A (the most common type of hemophilia) is a genetic bleeding disorder caused by a deficiency in Coagulation Factor VIII, meaning the blood cannot clot properly.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 642
+  },
+  {
+    "question": "Sickle cell anemia is characterized by the replacement of:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Glutamate at 6th position of beta chain by valine"
+      },
+      {
+        "key": "B",
+        "text": "Valine at 6th position of alpha chain by glutamate"
+      },
+      {
+        "key": "C",
+        "text": "Glutamate at 6th position of beta chain by glutamate"
+      },
+      {
+        "key": "D",
+        "text": "Glutamate at 6th position of alpha chain by glutamate"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Sickle cell anemia is a hereditary hemoglobinopathy caused by a missense mutation where the hydrophilic amino acid glutamic acid is replaced by the hydrophobic amino acid valine at the sixth position of the beta-globin chain.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 643
+  },
+  {
+    "question": "Which glands are situated one on each side of the face just below the external acoustic meatus?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Submandibular gland"
+      },
+      {
+        "key": "B",
+        "text": "Parotid gland"
+      },
+      {
+        "key": "C",
+        "text": "Sublingual gland"
+      },
+      {
+        "key": "D",
+        "text": "Mandibular gland"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The parotid glands are the largest salivary glands, situated symmetrically on each side of the face, located slightly inferior and anterior to the ears (external acoustic meatus).",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 644
+  },
+  {
+    "question": "What is the other name of the parasympathetic division?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Thoracolumbar outflow"
+      },
+      {
+        "key": "B",
+        "text": "Thoracosacral outflow"
+      },
+      {
+        "key": "C",
+        "text": "Craniosacral outflow"
+      },
+      {
+        "key": "D",
+        "text": "Craniolumbar outflow"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The parasympathetic nervous system is called the craniosacral outflow because the cell bodies of its preganglionic neurons reside in the nuclei of cranial nerves in the brainstem and in the sacral region of the spinal cord.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 645
+  },
+  {
+    "question": "The lateral wall of the middle ear is formed by:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tympanic membrane"
+      },
+      {
+        "key": "B",
+        "text": "Temporal bone"
+      },
+      {
+        "key": "C",
+        "text": "Mastoid antrum"
+      },
+      {
+        "key": "D",
+        "text": "Fibrous tissue"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The lateral boundary of the tympanic cavity (middle ear) is formed predominantly by the tympanic membrane (eardrum), which separates the middle ear from the external auditory canal.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 646
+  },
+  {
+    "question": "Which carbohydrate is present in the exoskeleton of insects?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Inulin"
+      },
+      {
+        "key": "B",
+        "text": "Agar"
+      },
+      {
+        "key": "C",
+        "text": "Chitin"
+      },
+      {
+        "key": "D",
+        "text": "Dextrins"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Chitin is a large, structural polysaccharide made from chains of modified glucose. It is highly resilient and serves as a major structural component in the exoskeletons of arthropods, such as insects.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 647
+  },
+  {
+    "question": "Which law states that the intensity of color is directly proportional to the concentration of colored particles in the solution?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Lambert's law"
+      },
+      {
+        "key": "B",
+        "text": "Kinetic law"
+      },
+      {
+        "key": "C",
+        "text": "End point law"
+      },
+      {
+        "key": "D",
+        "text": "Beer's law"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Beer's Law (or the Beer-Lambert law) establishes that the absorbance of light traversing a liquid solution is directly proportional to the concentration of the dissolved substance and its path length.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 648
+  },
+  {
+    "question": "Which protein is responsible for maintaining osmotic balance?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Albumin"
+      },
+      {
+        "key": "B",
+        "text": "Globulin"
+      },
+      {
+        "key": "C",
+        "text": "Fibrinogen"
+      },
+      {
+        "key": "D",
+        "text": "Prothrombin"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Albumin is the most abundant protein in human blood plasma. It plays an essential role in regulating the oncotic (osmotic) pressure of plasma, keeping water from leaking out of blood vessels into surrounding tissues.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 649
+  },
+  {
+    "question": "Which enzyme acts on the substance lactose?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Maltase"
+      },
+      {
+        "key": "B",
+        "text": "Lactase"
+      },
+      {
+        "key": "C",
+        "text": "Sucrase"
+      },
+      {
+        "key": "D",
+        "text": "Lipase"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Lactase is a digestive enzyme that catalyzes the hydrolysis of lactose (a sugar found in milk) into simpler sugars, glucose and galactose, enabling absorption in the small intestine.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 650
+  },
+  {
+    "question": "Which radioisotope is used to detect functional derangement of the thyroid gland?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Cr 51"
+      },
+      {
+        "key": "B",
+        "text": "Tc 99"
+      },
+      {
+        "key": "C",
+        "text": "Cs 137"
+      },
+      {
+        "key": "D",
+        "text": "I 131"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Iodine-131 is a radioisotope that is actively taken up by thyroid tissue. It is widely utilized in radioactive iodine uptake tests to evaluate thyroid function and in treatments to destroy hyperactive thyroid tissue.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 651
+  },
+  {
+    "question": "Who discovered the chromatography technique?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tswett 1903"
+      },
+      {
+        "key": "B",
+        "text": "Wagner 1926"
+      },
+      {
+        "key": "C",
+        "text": "Rosin Yellow 1977"
+      },
+      {
+        "key": "D",
+        "text": "John Martin 1952"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The Russian botanist Mikhail Tswett invented chromatography in 1903 while researching plant pigments, successfully separating chlorophylls and carotenoids using a calcium carbonate column.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 652
+  },
+  {
+    "question": "Vitamin E is a nutrient antioxidant that works in association with:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Iron"
+      },
+      {
+        "key": "B",
+        "text": "Zinc"
+      },
+      {
+        "key": "C",
+        "text": "Selenium"
+      },
+      {
+        "key": "D",
+        "text": "Iodine"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Vitamin E functions as an essential fat-soluble antioxidant. It works synergistically with the trace element selenium, which is a structural component of the antioxidant enzyme glutathione peroxidase, to protect cell membranes.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 653
+  },
+  {
+    "question": "Which one of the following anti-asthmatic drugs can cause convulsions or arrhythmia?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Prednisolone"
+      },
+      {
+        "key": "B",
+        "text": "Salmeterol"
+      },
+      {
+        "key": "C",
+        "text": "Zafirlukast"
+      },
+      {
+        "key": "D",
+        "text": "Theophylline"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Theophylline is an oral bronchodilator. It possesses a very narrow therapeutic index, meaning the dose that provides benefit is close to the dose that is toxic. High levels can trigger severe adverse effects like cardiac arrhythmias and seizures.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 654
+  },
+  {
+    "question": "Which of the following side effects of ACE inhibitors results from the inhibition of bradykinin breakdown?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dry cough"
+      },
+      {
+        "key": "B",
+        "text": "Hypotension"
+      },
+      {
+        "key": "C",
+        "text": "Hyperkalemia"
+      },
+      {
+        "key": "D",
+        "text": "Angioedema"
+      }
+    ],
+    "answer": "A",
+    "explanation": "ACE (Angiotensin-Converting Enzyme) inhibitors block the enzyme that degrades bradykinin. The resultant elevated levels of bradykinin in the lungs cause irritation, frequently manifesting as a persistent, dry cough.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 655
+  },
+  {
+    "question": "Ranitidine inhibits HCL formation by blocking the proton pump through its action on which receptor?",
+    "options": [
+      {
+        "key": "A",
+        "text": "H1 receptor"
+      },
+      {
+        "key": "B",
+        "text": "H2 receptor"
+      },
+      {
+        "key": "C",
+        "text": "Muscarinic receptor"
+      },
+      {
+        "key": "D",
+        "text": "Gastrin receptor"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Ranitidine acts as a competitive, reversible inhibitor of histamine H2-receptors found in gastric parietal cells, thereby heavily decreasing both basal and stimulated gastric acid (HCl) secretion.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 656
+  },
+  {
+    "question": "Administration of which of the following anti-cancer drugs will result in the development of a disulfiram-like reaction on taking alcohol?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Cisplatin"
+      },
+      {
+        "key": "B",
+        "text": "Procarbazine"
+      },
+      {
+        "key": "C",
+        "text": "Methotrexate"
+      },
+      {
+        "key": "D",
+        "text": "5-Fluorouracil"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Procarbazine is an alkylating chemotherapy drug. It can inhibit the enzyme aldehyde dehydrogenase. When alcohol is consumed, the metabolism stops at acetaldehyde, creating an extreme build-up leading to a miserable 'disulfiram-like' reaction.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 657
+  },
+  {
+    "question": "Which route of drug administration has high patient compliance?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Rectal"
+      },
+      {
+        "key": "B",
+        "text": "Oral"
+      },
+      {
+        "key": "C",
+        "text": "Intravenous"
+      },
+      {
+        "key": "D",
+        "text": "Subcutaneous"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The oral route is the most widely utilized and preferred method of drug administration because it is non-invasive, convenient, painless, and economical, yielding the highest rate of patient compliance.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 658
+  },
+  {
+    "question": "Which of the following drugs can be used for smoking cessation?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nicotine patch"
+      },
+      {
+        "key": "B",
+        "text": "Varenicline"
+      },
+      {
+        "key": "C",
+        "text": "Bupropion"
+      },
+      {
+        "key": "D",
+        "text": "All of the above"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Bupropion, an atypical antidepressant, is widely used clinically as a prescription aid to help patients quit smoking (smoking cessation) as it lowers craving and mitigates nicotine withdrawal symptoms.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 659
+  },
+  {
+    "question": "In which type of dysfunction in a patient is empagliflozin contraindicated?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hepatic dysfunction"
+      },
+      {
+        "key": "B",
+        "text": "Neural dysfunction"
+      },
+      {
+        "key": "C",
+        "text": "Renal dysfunction"
+      },
+      {
+        "key": "D",
+        "text": "Cardiac dysfunction"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Empagliflozin relies on filtering glucose out of the blood through the kidneys (SGLT2 inhibitor). Because of this mechanism, it requires healthy kidney function and is contraindicated if a patient has severe renal impairment (e.g., GFR < 30 ml/min).",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 660
+  },
+  {
+    "question": "Which of the following is a cocci occurring in single or pairs?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Staphylococci"
+      },
+      {
+        "key": "B",
+        "text": "Streptococci"
+      },
+      {
+        "key": "C",
+        "text": "Diplococci"
+      },
+      {
+        "key": "D",
+        "text": "Streptobacilli"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Cocci are spherically shaped bacteria. When they divide and remain attached in pairs, the arrangement is designated as 'Diplococci' (e.g., Streptococcus pneumoniae or Neisseria gonorrhoeae).",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 661
+  },
+  {
+    "question": "Which constituent is present only in the cell wall of gram-positive bacteria?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Glycogen"
+      },
+      {
+        "key": "B",
+        "text": "Teichoic acid"
+      },
+      {
+        "key": "C",
+        "text": "Starch"
+      },
+      {
+        "key": "D",
+        "text": "Muramic acid"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Teichoic acids are complex polymers found embedded firmly within the thick peptidoglycan cell wall layers of Gram-positive bacteria. They are absent in Gram-negative bacteria.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 662
+  },
+  {
+    "question": "What is the another name of AFB stain?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Gram stain"
+      },
+      {
+        "key": "B",
+        "text": "ZN stain"
+      },
+      {
+        "key": "C",
+        "text": "Albert stain"
+      },
+      {
+        "key": "D",
+        "text": "Giemsa stain"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The Acid-Fast Bacillus (AFB) stain is routinely referred to as the Ziehl-Neelsen (ZN) stain. It is a microbiological staining technique utilized to identify acid-fast mycobacteria.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 663
+  },
+  {
+    "question": "What is the highest magnification power that can be achieved by light microscopy?",
+    "options": [
+      {
+        "key": "A",
+        "text": "50x"
+      },
+      {
+        "key": "B",
+        "text": "100x"
+      },
+      {
+        "key": "C",
+        "text": "40x"
+      },
+      {
+        "key": "D",
+        "text": "1000x"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Standard optical compound light microscopes can theoretically attain up to 1000x useful magnification by coupling a 10x ocular lens with a 100x oil immersion objective lens.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 664
+  },
+  {
+    "question": "Which type of microscopy is used to detect spirochetes?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dark field microscopy"
+      },
+      {
+        "key": "B",
+        "text": "Light microscopy"
+      },
+      {
+        "key": "C",
+        "text": "Fluorescent microscopy"
+      },
+      {
+        "key": "D",
+        "text": "Electron microscopy"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Spirochetes are extremely thin and do not stain well, making them invisible under standard bright-field microscopes. Dark field microscopy is specifically used, lighting them up against a dark background for detection.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 665
+  },
+  {
+    "question": "Which type of bacteria obtain energy from chemical reactions?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Autotrophs"
+      },
+      {
+        "key": "B",
+        "text": "Chemotrophs"
+      },
+      {
+        "key": "C",
+        "text": "Phototrophs"
+      },
+      {
+        "key": "D",
+        "text": "Heterotrophs"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Organisms that derive their energy through the oxidation of electron donors in their environments (chemical reactions) are classified as chemotrophs, contrasted with phototrophs which use light.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 666
+  },
+  {
+    "question": "Which solidifying agent is used in the microbiology lab to solidify medium?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Agar"
+      },
+      {
+        "key": "B",
+        "text": "Peptone"
+      },
+      {
+        "key": "C",
+        "text": "Cellulose"
+      },
+      {
+        "key": "D",
+        "text": "Thioglycollate"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Agar, extracted from red algae, is widely used as a solidifying agent in culture media. It provides a solid surface for bacteria to grow and remains solid at normal bacterial incubation temperatures.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 667
+  },
+  {
+    "question": "Which of the following is an example of culture media for anaerobic bacteria?",
+    "options": [
+      {
+        "key": "A",
+        "text": "MacConkey agar"
+      },
+      {
+        "key": "B",
+        "text": "LJ media"
+      },
+      {
+        "key": "C",
+        "text": "Nutrient agar"
+      },
+      {
+        "key": "D",
+        "text": "Robertson cooked meat medium"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Robertson's cooked meat (RCM) medium is specifically formulated to grow and preserve anaerobic bacteria. The meat particles contain reducing substances like glutathione that help maintain a low oxygen environment.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 668
+  },
+  {
+    "question": "What is the name of the cellular phase of macrophage development?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Erythrocytes"
+      },
+      {
+        "key": "B",
+        "text": "Monocytes"
+      },
+      {
+        "key": "C",
+        "text": "Lymphocytes"
+      },
+      {
+        "key": "D",
+        "text": "Leukocytes"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Macrophages develop from precursor cells known as monocytes. Monocytes circulate in the blood and then migrate into bodily tissues, where they differentiate into mature macrophages.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 669
+  },
+  {
+    "question": "Which culture media is used for antimicrobial susceptibility testing?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Blood agar"
+      },
+      {
+        "key": "B",
+        "text": "MacConkey"
+      },
+      {
+        "key": "C",
+        "text": "Chocolate"
+      },
+      {
+        "key": "D",
+        "text": "Mueller Hinton agar"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Mueller-Hinton agar is considered the gold standard medium for performing antimicrobial susceptibility testing (AST) using the Kirby-Bauer disk diffusion method because of its excellent batch-to-batch reproducibility.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 670
+  },
+  {
+    "question": "____ refers to the overall level of immunity in a community and is relevant to the control of epidemic disease.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Innate immunity"
+      },
+      {
+        "key": "B",
+        "text": "Active immunity"
+      },
+      {
+        "key": "C",
+        "text": "Passive immunity"
+      },
+      {
+        "key": "D",
+        "text": "Herd immunity"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Herd immunity (or community immunity) occurs when a sufficiently high proportion of individuals are immune to a disease, minimizing its spread and thereby conferring indirect protection to those who are still vulnerable.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 671
+  },
+  {
+    "question": "Which type of antibody is found in mother's milk?",
+    "options": [
+      {
+        "key": "A",
+        "text": "IgA"
+      },
+      {
+        "key": "B",
+        "text": "IgM"
+      },
+      {
+        "key": "C",
+        "text": "IgD"
+      },
+      {
+        "key": "D",
+        "text": "IgE"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Secretory IgA is the most abundant immunoglobulin present in human breast milk and colostrum. It coats the infant's mucosal surfaces (like the gut) and protects against invading pathogens, conferring passive immunity.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 672
+  },
+  {
+    "question": "What is the source of complement in CFT?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Rat serum"
+      },
+      {
+        "key": "B",
+        "text": "Horse serum"
+      },
+      {
+        "key": "C",
+        "text": "Guinea pig serum"
+      },
+      {
+        "key": "D",
+        "text": "Rabbit serum"
+      }
+    ],
+    "answer": "C",
+    "explanation": "In a Complement Fixation Test (CFT), Guinea pig serum is universally used as the standard, exogenous source of complement because of its exceptionally high level of complement activity.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15"
+    ],
+    "id": 673
   }
 ]
