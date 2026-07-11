@@ -19867,5 +19867,545 @@
       "AIIMS CRE OT Technician Prep"
     ],
     "id": 733
+  },
+  {
+    "question": "What is the standard color coding for a Nitrous Oxide medical gas cylinder?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Black body with white shoulder"
+      },
+      {
+        "key": "B",
+        "text": "Blue body and shoulder"
+      },
+      {
+        "key": "C",
+        "text": "Grey body and shoulder"
+      },
+      {
+        "key": "D",
+        "text": "White body and shoulder"
+      }
+    ],
+    "answer": "B",
+    "explanation": "According to international standards, Nitrous Oxide cylinders are painted completely blue. Oxygen cylinders have a black body with a white shoulder.",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 734
+  },
+  {
+    "question": "Which of the following is a critical safety device in an anesthesia workstation to prevent delivery of a hypoxic mixture?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hypoxic guard (proportioning system)"
+      },
+      {
+        "key": "B",
+        "text": "Vaporizer interlock"
+      },
+      {
+        "key": "C",
+        "text": "Pop-off valve"
+      },
+      {
+        "key": "D",
+        "text": "Reservoir bag"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The hypoxic guard or proportioning system ensures that the oxygen concentration never drops below 25% when administering a mixture of nitrous oxide and oxygen, preventing a hypoxic delivery.",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 735
+  },
+  {
+    "question": "Which volatile anesthetic requires a specially designed, heated, and pressurized vaporizer (Tec 6)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sevoflurane"
+      },
+      {
+        "key": "B",
+        "text": "Isoflurane"
+      },
+      {
+        "key": "C",
+        "text": "Desflurane"
+      },
+      {
+        "key": "D",
+        "text": "Halothane"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Desflurane has a boiling point near room temperature (22.8°C). Therefore, it requires a specially designed heated and pressurized vaporizer to deliver a consistent concentration.",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 736
+  },
+  {
+    "question": "What is the primary function of the reservoir bag in an anesthesia breathing circuit?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To filter the exhaled air"
+      },
+      {
+        "key": "B",
+        "text": "To provide a visual assessment of respiration and act as a gas buffer"
+      },
+      {
+        "key": "C",
+        "text": "To heat and humidify the gases"
+      },
+      {
+        "key": "D",
+        "text": "To measure the patient's blood pressure"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The reservoir bag allows the anesthesia provider to visually monitor the patient's spontaneous breathing, provides a reservoir of gas for inspiration, and can be squeezed to assist or control ventilation.",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 737
+  },
+  {
+    "question": "The Jackson-Rees system is a modification of which classical breathing circuit?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Mapleson A"
+      },
+      {
+        "key": "B",
+        "text": "Mapleson D"
+      },
+      {
+        "key": "C",
+        "text": "Mapleson E (Ayre's T-piece)"
+      },
+      {
+        "key": "D",
+        "text": "Mapleson C"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The Jackson-Rees modification (Mapleson F) is essentially an Ayre's T-piece (Mapleson E) with a modified open-ended reservoir bag added to the expiratory limb to allow for controlled ventilation and monitoring of respiration.",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 738
+  },
+  {
+    "question": "Pulse oximetry works on the principle of:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Capnography"
+      },
+      {
+        "key": "B",
+        "text": "Spectrophotometry and Plethysmography"
+      },
+      {
+        "key": "C",
+        "text": "Galvanic fuel cell"
+      },
+      {
+        "key": "D",
+        "text": "Paramagnetic analysis"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Pulse oximetry utilizes spectrophotometry (measuring the absorption of red and infrared light by oxygenated and deoxygenated hemoglobin) and plethysmography (detecting the pulsatile blood flow) to determine arterial oxygen saturation (SpO2).",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 739
+  },
+  {
+    "question": "What is the most common indicator color change in exhausted soda-lime?",
+    "options": [
+      {
+        "key": "A",
+        "text": "White to Pink/Violet"
+      },
+      {
+        "key": "B",
+        "text": "Pink to White"
+      },
+      {
+        "key": "C",
+        "text": "Blue to Red"
+      },
+      {
+        "key": "D",
+        "text": "Yellow to Green"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Most standard soda-lime contains ethyl violet as an indicator. When the granules become exhausted (saturated with CO2 and pH drops), the color changes from white to pink or violet.",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 740
+  },
+  {
+    "question": "Which face mask size is typically appropriate for a normal adult patient?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Size 1 or 2"
+      },
+      {
+        "key": "B",
+        "text": "Size 3"
+      },
+      {
+        "key": "C",
+        "text": "Size 4 or 5"
+      },
+      {
+        "key": "D",
+        "text": "Size 6"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Face masks are sized from 0 (neonates) up to 5 or 6 (large adults). Size 4 is generally used for average adult females, and size 5 for adult males.",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 741
+  },
+  {
+    "question": "What is the recommended safe cuff pressure for an endotracheal tube to prevent tracheal mucosal damage?",
+    "options": [
+      {
+        "key": "A",
+        "text": "10 - 15 cm H2O"
+      },
+      {
+        "key": "B",
+        "text": "20 - 30 cm H2O"
+      },
+      {
+        "key": "C",
+        "text": "35 - 45 cm H2O"
+      },
+      {
+        "key": "D",
+        "text": "50 - 60 cm H2O"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The recommended cuff pressure is between 20 and 30 cm H2O. Pressures above 30 cm H2O can exceed capillary perfusion pressure, leading to ischemia and necrosis of the tracheal mucosa.",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 742
+  },
+  {
+    "question": "Central Venous Pressure (CVP) monitoring is primarily used to assess:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Left ventricular function"
+      },
+      {
+        "key": "B",
+        "text": "Right ventricular preload and volume status"
+      },
+      {
+        "key": "C",
+        "text": "Systemic vascular resistance"
+      },
+      {
+        "key": "D",
+        "text": "Arterial oxygenation"
+      }
+    ],
+    "answer": "B",
+    "explanation": "CVP reflects the pressure in the right atrium and the vena cava, giving an estimation of right ventricular preload and the overall intravascular fluid volume status of the patient.",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 743
+  },
+  {
+    "question": "Which of the following intravenous anesthetic agents is most commonly known to cause pain upon injection?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ketamine"
+      },
+      {
+        "key": "B",
+        "text": "Thiopental"
+      },
+      {
+        "key": "C",
+        "text": "Propofol"
+      },
+      {
+        "key": "D",
+        "text": "Midazolam"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Propofol frequently causes a burning pain on injection, likely due to the lipid emulsion it is formulated in. This is often mitigated by injecting lidocaine beforehand.",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 744
+  },
+  {
+    "question": "In basic CPR for adults, what is the recommended ratio of chest compressions to rescue breaths?",
+    "options": [
+      {
+        "key": "A",
+        "text": "15:2"
+      },
+      {
+        "key": "B",
+        "text": "30:2"
+      },
+      {
+        "key": "C",
+        "text": "30:1"
+      },
+      {
+        "key": "D",
+        "text": "100:1"
+      }
+    ],
+    "answer": "B",
+    "explanation": "According to the AHA guidelines for basic CPR in adults, whether performed by a single or two rescuers, the compression-to-ventilation ratio is 30:2.",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 745
+  },
+  {
+    "question": "Which of the following is NOT part of the minimum standard monitoring required by ASA guidelines?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Electrocardiography (ECG)"
+      },
+      {
+        "key": "B",
+        "text": "Non-invasive blood pressure (NIBP)"
+      },
+      {
+        "key": "C",
+        "text": "Pulse oximetry"
+      },
+      {
+        "key": "D",
+        "text": "Arterial line monitoring"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Arterial lines are invasive and are reserved for specific major surgeries or critical patients. Standard ASA monitoring includes ECG, BP, pulse oximetry, capnography, and temperature.",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 746
+  },
+  {
+    "question": "During a Pre-Anesthetic Check-up (PAC), assigning an ASA physical status of III indicates:",
+    "options": [
+      {
+        "key": "A",
+        "text": "A healthy patient"
+      },
+      {
+        "key": "B",
+        "text": "A patient with mild systemic disease"
+      },
+      {
+        "key": "C",
+        "text": "A patient with severe systemic disease"
+      },
+      {
+        "key": "D",
+        "text": "A moribund patient not expected to survive"
+      }
+    ],
+    "answer": "C",
+    "explanation": "The ASA classification categorizes physical status before surgery. ASA III denotes a patient with severe systemic disease that is not incapacitating (e.g., poorly controlled hypertension, morbid obesity).",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 747
+  },
+  {
+    "question": "The primary purpose of obtaining informed consent before anesthesia is:",
+    "options": [
+      {
+        "key": "A",
+        "text": "To guarantee there will be no complications"
+      },
+      {
+        "key": "B",
+        "text": "To respect the patient's autonomy and legally inform them of risks, benefits, and alternatives"
+      },
+      {
+        "key": "C",
+        "text": "To act as a waiver preventing any lawsuits"
+      },
+      {
+        "key": "D",
+        "text": "To inform the billing department of the upcoming procedure"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Informed consent is a crucial medico-legal and ethical requirement. It ensures the patient understands the procedure, the risks, benefits, and alternatives, allowing them to make an autonomous decision.",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 748
+  },
+  {
+    "question": "When transferring an intubated patient from the operating table to a transport trolley, what is the most critical step for the anesthesia technician?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Disconnect the ET tube to prevent accidental extubation during the move"
+      },
+      {
+        "key": "B",
+        "text": "Administer an extra dose of muscle relaxant"
+      },
+      {
+        "key": "C",
+        "text": "Turn off all monitoring devices first"
+      },
+      {
+        "key": "D",
+        "text": "Move the patient rapidly to save time"
+      }
+    ],
+    "answer": "A",
+    "explanation": "During transfer, the breathing circuit should be briefly disconnected from the ET tube (or tightly secured) to prevent the tube from being pulled out accidentally by the weight or snagging of the circuit.",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 749
+  },
+  {
+    "question": "Which parameter is fundamentally observed during basic hemodynamic monitoring?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Urine output"
+      },
+      {
+        "key": "B",
+        "text": "Blood pressure and heart rate"
+      },
+      {
+        "key": "C",
+        "text": "Core temperature"
+      },
+      {
+        "key": "D",
+        "text": "End-tidal CO2"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Hemodynamic monitoring primarily refers to the physical parameters of blood circulation, with non-invasive blood pressure and heart rate being the most basic and fundamental metrics.",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 750
+  },
+  {
+    "question": "An Anglocath (IV Cannula) with a green hub corresponds to what gauge size?",
+    "options": [
+      {
+        "key": "A",
+        "text": "16G"
+      },
+      {
+        "key": "B",
+        "text": "18G"
+      },
+      {
+        "key": "C",
+        "text": "20G"
+      },
+      {
+        "key": "D",
+        "text": "22G"
+      }
+    ],
+    "answer": "B",
+    "explanation": "IV Cannulas are color-coded globally. 16G is Grey, 18G is Green (most common for blood transfusions and adults in OT), 20G is Pink, and 22G is Blue.",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 751
+  },
+  {
+    "question": "Which type of laryngoscope blade is curved and designed to be placed in the vallecula during intubation?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Miller blade"
+      },
+      {
+        "key": "B",
+        "text": "Macintosh blade"
+      },
+      {
+        "key": "C",
+        "text": "Magill forceps"
+      },
+      {
+        "key": "D",
+        "text": "McCoy blade"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The Macintosh blade is curved and inserted into the vallecula to indirectly lift the epiglottis. The Miller blade is straight and designed to lift the epiglottis directly.",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 752
+  },
+  {
+    "question": "What is the most common minor post-operative complication following general anesthesia?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Malignant Hyperthermia"
+      },
+      {
+        "key": "B",
+        "text": "Anaphylaxis"
+      },
+      {
+        "key": "C",
+        "text": "Post-Operative Nausea and Vomiting (PONV)"
+      },
+      {
+        "key": "D",
+        "text": "Pulmonary Embolism"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Post-Operative Nausea and Vomiting (PONV) is the most frequent and commonly cited complication following general anesthesia, requiring prophylactic and active management in the recovery room.",
+    "sources": [
+      "anesthesia ot technician exam part 20"
+    ],
+    "id": 753
   }
 ]
