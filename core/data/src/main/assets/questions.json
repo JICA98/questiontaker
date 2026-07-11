@@ -16189,5 +16189,896 @@
       "AIIMS CRE OT Technician Questions"
     ],
     "id": 599
+  },
+  {
+    "question": "What is the aim of managing laboratory waste?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To maximize safety and maximize environmental effect"
+      },
+      {
+        "key": "B",
+        "text": "To maximize safety and minimize environmental impact"
+      },
+      {
+        "key": "C",
+        "text": "To maximize safety only"
+      },
+      {
+        "key": "D",
+        "text": "To maximize environmental impact only"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Biomedical Waste (BMW) management guidelines are strictly designed to maximize human and animal safety while keeping the environmental impact of hazardous laboratory waste to an absolute minimum.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 600
+  },
+  {
+    "question": "What is stress incontinence?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Leaking of saliva during exercise, coughing, sneezing, laughing or lifting"
+      },
+      {
+        "key": "B",
+        "text": "Leaking of tears during exercise, coughing, sneezing, laughing or lifting"
+      },
+      {
+        "key": "C",
+        "text": "Leaking of urine during exercise, coughing, sneezing, laughing or lifting"
+      },
+      {
+        "key": "D",
+        "text": "Storage of urine during exercise, coughing, sneezing, laughing or lifting"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Stress incontinence occurs when physical activities such as coughing, sneezing, laughing, or heavy lifting place sudden pressure (stress) on the bladder and pelvic floor muscles, causing an involuntary leakage of urine.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 601
+  },
+  {
+    "question": "Which of the following yeast used for bread making?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Brewers yeast"
+      },
+      {
+        "key": "B",
+        "text": "Rhodotorula"
+      },
+      {
+        "key": "C",
+        "text": "Clavaria"
+      },
+      {
+        "key": "D",
+        "text": "Cryptococcus"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Brewer's yeast (Saccharomyces cerevisiae) is the most prominent yeast strain used in baking and bread-making due to its ability to ferment sugars into carbon dioxide and ethanol, causing the dough to rise.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 602
+  },
+  {
+    "question": "Which of the following gland include sweat, sebaceous, and mammary glands and glands that secrete digestive enzymes?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Endocrine glands"
+      },
+      {
+        "key": "B",
+        "text": "Exocrine glands"
+      },
+      {
+        "key": "C",
+        "text": "Both endocrine and exocrine glands"
+      },
+      {
+        "key": "D",
+        "text": "None of these"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Exocrine glands are glands that secrete their products (like sweat, sebum, enzymes, or milk) into ducts that lead directly to the external environment or onto epithelial surfaces, unlike endocrine glands which secrete hormones directly into the bloodstream.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 603
+  },
+  {
+    "question": "Which of the following system has no reservoir breathing bag as per anesthesia breathing circuit?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Open breathing system"
+      },
+      {
+        "key": "B",
+        "text": "Semi open breathing system"
+      },
+      {
+        "key": "C",
+        "text": "Semi close breathing system"
+      },
+      {
+        "key": "D",
+        "text": "Close breathing system"
+      }
+    ],
+    "answer": "A",
+    "explanation": "An open breathing circuit lacks a reservoir bag, valves, or CO2 absorbers. The patient inhales a mixture of anesthetic gas and room air, and exhales completely into the atmosphere.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 604
+  },
+  {
+    "question": "Which device used to send an electric pulse or shock to heart to restore a normal heart beat?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Defibrillator"
+      },
+      {
+        "key": "B",
+        "text": "Ventilator"
+      },
+      {
+        "key": "C",
+        "text": "Pacemaker"
+      },
+      {
+        "key": "D",
+        "text": "Monitor"
+      }
+    ],
+    "answer": "A",
+    "explanation": "A defibrillator is a medical device that delivers a high-energy electrical shock to the heart through the chest wall to restore a normal rhythm during cardiac arrest or life-threatening arrhythmias.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 605
+  },
+  {
+    "question": "The uncontrolled abnormal growth of cells or tissues in the body is known as:",
+    "options": [
+      {
+        "key": "A",
+        "text": "TORCH"
+      },
+      {
+        "key": "B",
+        "text": "Neoplasm"
+      },
+      {
+        "key": "C",
+        "text": "Salmonella"
+      },
+      {
+        "key": "D",
+        "text": "Staphylococci"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A neoplasm (or tumor) is an abnormal mass of tissue that forms when cells grow and divide more than they should, bypassing normal cellular apoptosis (cell death).",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 606
+  },
+  {
+    "question": "A test to evaluate blood clotting is known as:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Only coagulation factor test"
+      },
+      {
+        "key": "B",
+        "text": "Only prothrombin time test"
+      },
+      {
+        "key": "C",
+        "text": "Glucose tolerance test"
+      },
+      {
+        "key": "D",
+        "text": "Both coagulation factor test and prothrombin time test are correct"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Blood clotting disorders can be evaluated using various parameters. Both Coagulation factor tests and the Prothrombin Time (PT) test are heavily utilized to assess a patient's blood clotting capabilities.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 607
+  },
+  {
+    "question": "Which of the following refers to an increase in size either through an increase in number of cells, or through an increase in the size of each individual cell?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Respiration"
+      },
+      {
+        "key": "B",
+        "text": "Growth"
+      },
+      {
+        "key": "C",
+        "text": "Responsiveness"
+      },
+      {
+        "key": "D",
+        "text": "Digestion"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Growth is defined in biological terms as an irreversible, permanent increase in the size of an organ or its parts, driven by cell division (hyperplasia) or cell enlargement (hypertrophy).",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 608
+  },
+  {
+    "question": "ICU stands for:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Intensive Caller Unit"
+      },
+      {
+        "key": "B",
+        "text": "Intensive Care Unit"
+      },
+      {
+        "key": "C",
+        "text": "Immunity Caller Unit"
+      },
+      {
+        "key": "D",
+        "text": "Care Unit"
+      }
+    ],
+    "answer": "B",
+    "explanation": "ICU stands for Intensive Care Unit, a specialized hospital department that provides comprehensive and continuous care for critically ill patients.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 609
+  },
+  {
+    "question": "Which of the following virus is found in the stool/feces of people with HAV infection?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hepatitis A virus"
+      },
+      {
+        "key": "B",
+        "text": "Hepatitis B virus"
+      },
+      {
+        "key": "C",
+        "text": "Hepatitis C virus"
+      },
+      {
+        "key": "D",
+        "text": "Hepatitis E virus"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Hepatitis A (HAV) is primarily spread via the fecal-oral route. Thus, the Hepatitis A virus is shed in the stool of an infected person.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 610
+  },
+  {
+    "question": "Which of the following is or are cardiovascular problems that happen in blood vessels?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Aneurysm"
+      },
+      {
+        "key": "B",
+        "text": "Atherosclerosis"
+      },
+      {
+        "key": "C",
+        "text": "Vascular disease"
+      },
+      {
+        "key": "D",
+        "text": "All of these"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Aneurysms (ballooning of weakened blood vessels) and atherosclerosis (plaque build-up in arteries) are both prominent types of vascular diseases that directly affect the cardiovascular system.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 611
+  },
+  {
+    "question": "Which of the following regional anesthesia is typically used for surgery of the upper leg, hip or knee?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Interscalene nerve block"
+      },
+      {
+        "key": "B",
+        "text": "Femoral nerve block"
+      },
+      {
+        "key": "C",
+        "text": "Axillary nerve block"
+      },
+      {
+        "key": "D",
+        "text": "Bier block"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The femoral nerve block specifically targets the femoral nerve, desensitizing the anterior thigh and knee, making it a routine anesthetic approach for surgeries of the hip, upper leg, and knee joint.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 612
+  },
+  {
+    "question": "When is critical care or medical care needed for people?",
+    "options": [
+      {
+        "key": "A",
+        "text": "If people have heart failure"
+      },
+      {
+        "key": "B",
+        "text": "If people have kidney failure"
+      },
+      {
+        "key": "C",
+        "text": "Respiratory failure"
+      },
+      {
+        "key": "D",
+        "text": "All of these"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Heart failure, kidney failure, and respiratory failure represent severe physiological breakdowns. All these conditions require immediate critical care monitoring in an intensive care setting.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 613
+  },
+  {
+    "question": "What are the important points to remember for transferring a patient from bed to stretcher?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Identify the number of staff required for the transfer"
+      },
+      {
+        "key": "B",
+        "text": "Explain what patient can do to help the procedure and obtain necessary supply"
+      },
+      {
+        "key": "C",
+        "text": "Raise/lower the bed to a safe working height, lock the brakes, lower guard rails, position the patient closest to the side of bed"
+      },
+      {
+        "key": "D",
+        "text": "All of the above"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Safe patient transfer protocols mandate engaging the patient, locking brakes, raising beds to ergonomic heights, and using sufficient staff to prevent musculoskeletal injuries and patient falls.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 614
+  },
+  {
+    "question": "Which of the following are laparoscopic surgical instruments?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Cannula, Trocars"
+      },
+      {
+        "key": "B",
+        "text": "Trocar incision closure device"
+      },
+      {
+        "key": "C",
+        "text": "Needles and needle holder"
+      },
+      {
+        "key": "D",
+        "text": "All of these"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Laparoscopic procedures rely on specialized minimally invasive equipment. Trocars and cannulas are required for access ports, while specific needle holders and incision closures are used internally.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 615
+  },
+  {
+    "question": "Choose from the following options the sterilization method that is most frequently used in hospitals and clinical laboratories.",
+    "options": [
+      {
+        "key": "A",
+        "text": "ETO gas and hydrogen peroxide gas plasma"
+      },
+      {
+        "key": "B",
+        "text": "Steam under pressure"
+      },
+      {
+        "key": "C",
+        "text": "Dry heat"
+      },
+      {
+        "key": "D",
+        "text": "All of these"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Steam under pressure (Autoclaving) is the most standard, cost-effective, and frequently used sterilization method in clinical and hospital laboratories.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 616
+  },
+  {
+    "question": "CPR stands for:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Cardiopulmonary Resuscitation"
+      },
+      {
+        "key": "B",
+        "text": "Central Pulmonary Respiration"
+      },
+      {
+        "key": "C",
+        "text": "Cardio Patient Rescue"
+      },
+      {
+        "key": "D",
+        "text": "Cardiac Pulmonary Rescue"
+      }
+    ],
+    "answer": "A",
+    "explanation": "CPR stands for Cardiopulmonary Resuscitation. It is a vital emergency response performed when a patient has suffered respiratory or cardiac failure.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 617
+  },
+  {
+    "question": "Which of the following bacteria commonly found in anaerobic sludge during sewage treatment?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Rhodotorula"
+      },
+      {
+        "key": "B",
+        "text": "Brewers"
+      },
+      {
+        "key": "C",
+        "text": "Methanogens"
+      },
+      {
+        "key": "D",
+        "text": "Idonum"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Methanogens are anaerobic microorganisms predominantly found in sewage treatment sludge. They break down organic matter in the absence of oxygen to produce methane gas.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 618
+  },
+  {
+    "question": "Slightly movable joints are called:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amphiarthrosis"
+      },
+      {
+        "key": "B",
+        "text": "Synarthrosis"
+      },
+      {
+        "key": "C",
+        "text": "Diarthrosis"
+      },
+      {
+        "key": "D",
+        "text": "Skull bones"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Amphiarthroses are cartilaginous joints that offer limited (slight) mobility (e.g., intervertebral discs). Synarthroses are completely immovable, and diarthroses are freely movable synovial joints.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 619
+  },
+  {
+    "question": "What is or are basic type of steam sterilizers?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Only gravity displacement"
+      },
+      {
+        "key": "B",
+        "text": "Only high speed prevacuum sterilizer"
+      },
+      {
+        "key": "C",
+        "text": "Only low speed prevacuum sterilizer"
+      },
+      {
+        "key": "D",
+        "text": "Both high speed prevacuum sterilizer and gravity displacement are correct"
+      }
+    ],
+    "answer": "D",
+    "explanation": "The two primary types of steam sterilizers (autoclaves) used globally are gravity displacement autoclaves and high-speed prevacuum sterilizers.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 620
+  },
+  {
+    "question": "Electrocautery uses which of the following current?",
+    "options": [
+      {
+        "key": "A",
+        "text": "AC"
+      },
+      {
+        "key": "B",
+        "text": "DC"
+      },
+      {
+        "key": "C",
+        "text": "Electrocoagulation"
+      },
+      {
+        "key": "D",
+        "text": "Both AC and DC"
+      }
+    ],
+    "answer": "D",
+    "explanation": "While pure electrocautery utilizes Direct Current (DC) passing through a resistance wire, broader surgical electrosurgical units utilize Alternating Current (AC). Typically, devices account for both forms.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 621
+  },
+  {
+    "question": "Choose the correct option for short term anesthesia for conjunctiva or cornea.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Oxybuprocaine"
+      },
+      {
+        "key": "B",
+        "text": "Bupivacaine"
+      },
+      {
+        "key": "C",
+        "text": "Ropivacaine"
+      },
+      {
+        "key": "D",
+        "text": "Lignocaine"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Oxybuprocaine is a potent ester local anesthetic primarily used in ophthalmology to momentarily numb the eye's surface (conjunctiva and cornea) for minor surgical operations or diagnostics.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 622
+  },
+  {
+    "question": "Which of the following disease/syndrome is related with the adrenal gland when adrenal glands don't produce enough hormones?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Cushing syndrome"
+      },
+      {
+        "key": "B",
+        "text": "Acromegaly"
+      },
+      {
+        "key": "C",
+        "text": "Addison's disease"
+      },
+      {
+        "key": "D",
+        "text": "Prolactinoma"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Addison's disease, or adrenal insufficiency, happens when the adrenal glands are damaged and cannot produce enough of the hormones cortisol and, often, aldosterone.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 623
+  },
+  {
+    "question": "Which of the following ECG devices is used for 24 to 48 hours to get a continuous recording of your heart electrical activity for that time frame?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Holter monitor"
+      },
+      {
+        "key": "B",
+        "text": "Event monitor"
+      },
+      {
+        "key": "C",
+        "text": "Tomography"
+      },
+      {
+        "key": "D",
+        "text": "Magnetic resonance monitor"
+      }
+    ],
+    "answer": "A",
+    "explanation": "A Holter monitor is a small, wearable device that precisely tracks and records your heart rhythm (ECG) consistently over a 24 to 48-hour period.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 624
+  },
+  {
+    "question": "Which of the following injections contain steroid that regulate pain and inflammation?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Caudal"
+      },
+      {
+        "key": "B",
+        "text": "Subcutaneous"
+      },
+      {
+        "key": "C",
+        "text": "Intravenous"
+      },
+      {
+        "key": "D",
+        "text": "Intraocular"
+      }
+    ],
+    "answer": "A",
+    "explanation": "A caudal epidural injection places a corticosteroid medication into the lower part of the epidural space to effectively relieve severe lower back and leg pain by reducing nerve inflammation.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 625
+  },
+  {
+    "question": "Which of the following microorganisms grow in milk and convert it in curd?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Lactobacillus bacteria"
+      },
+      {
+        "key": "B",
+        "text": "Streptococcus"
+      },
+      {
+        "key": "C",
+        "text": "Staphylococcus"
+      },
+      {
+        "key": "D",
+        "text": "Methanogens"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Lactobacillus bacteria ingest the lactose sugars in milk and convert them into lactic acid. The drop in pH alters the milk proteins, causing it to coagulate and form curd.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 626
+  },
+  {
+    "question": "Which among of the following is used to remove debris, fluid from the surgical field and also use to clear the surgical smoke?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Suction tip only"
+      },
+      {
+        "key": "B",
+        "text": "Suction tip combined with suction source"
+      },
+      {
+        "key": "C",
+        "text": "Retractor"
+      },
+      {
+        "key": "D",
+        "text": "Stapler and clips"
+      }
+    ],
+    "answer": "B",
+    "explanation": "A suction tip alone is insufficient. It must be combined with a vacuum suction source to effectively pull fluids, blood, and electrocautery smoke away from the operating site.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 627
+  },
+  {
+    "question": "For setting up a surgical tray in the operation theatre, set a mayo stand and tray directly to the _____ of the scrub nurse who will be assisting in surgery.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Left"
+      },
+      {
+        "key": "B",
+        "text": "Right"
+      },
+      {
+        "key": "C",
+        "text": "In front of"
+      },
+      {
+        "key": "D",
+        "text": "Back"
+      }
+    ],
+    "answer": "B",
+    "explanation": "The Mayo stand is conventionally set up directly to the right side of the scrub nurse, matching the natural orientation for accessing and passing surgical instruments with the dominant hand.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 628
+  },
+  {
+    "question": "What is the function of an anesthetic breathing circuit?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To deliver inhale gas to patient"
+      },
+      {
+        "key": "B",
+        "text": "To deliver drugs to patient"
+      },
+      {
+        "key": "C",
+        "text": "To deliver liquid chemicals to patient"
+      },
+      {
+        "key": "D",
+        "text": "None of these"
+      }
+    ],
+    "answer": "A",
+    "explanation": "The anesthesia breathing circuit serves as the primary physical bridge to carry an inhaled gas mixture (oxygen and volatile anesthetics) into the patient's respiratory system and eliminate carbon dioxide.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 629
+  },
+  {
+    "question": "Which of the following is a reversible state of pharmacological controlled sleep with reduction of cortical activity?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Anesthesia"
+      },
+      {
+        "key": "B",
+        "text": "Sedation"
+      },
+      {
+        "key": "C",
+        "text": "Analgesia"
+      },
+      {
+        "key": "D",
+        "text": "Consciousness"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Sedation safely depresses a patient's level of consciousness (decreasing cortical activity) to reduce anxiety during a medical procedure. Unlike general anesthesia, it remains easily reversible without compromising the airway.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 630
+  },
+  {
+    "question": "For what condition are beta blocker drugs used?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To treat low blood pressure"
+      },
+      {
+        "key": "B",
+        "text": "To treat brain tumor"
+      },
+      {
+        "key": "C",
+        "text": "To treat high blood pressure"
+      },
+      {
+        "key": "D",
+        "text": "To treat cervical cancer"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Beta-blockers inhibit the effects of the hormone epinephrine (adrenaline). This causes the heart to beat more slowly and with less force, which naturally lowers high blood pressure.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 631
+  },
+  {
+    "question": "Which of the following anesthesia is typically used for labor (cesarean) and surgery of the colon and gastrointestinal tract?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Regional (Spinal/Epidural) Anesthesia"
+      },
+      {
+        "key": "B",
+        "text": "General Anesthesia"
+      },
+      {
+        "key": "C",
+        "text": "Local Anesthesia"
+      },
+      {
+        "key": "D",
+        "text": "Nerve Block"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Regional anesthesia (such as epidural or spinal) blocks pain in a specific region of the body. Epidurals are famously used in obstetrics for labor and C-sections, as well as for certain lower gastrointestinal surgeries, allowing the patient to remain awake but pain-free.",
+    "sources": [
+      "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2"
+    ],
+    "id": 632
   }
 ]
