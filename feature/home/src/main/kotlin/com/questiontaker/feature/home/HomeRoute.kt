@@ -15,6 +15,8 @@ import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.itemsIndexed
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
@@ -36,6 +38,7 @@ import com.questiontaker.data.QuestionRepository
 import com.questiontaker.data.UpdateManager
 import com.questiontaker.data.model.Question
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 sealed interface Screen {
     object Dashboard : Screen
@@ -49,6 +52,7 @@ sealed interface Screen {
         val totalTimeSeconds: Int
     ) : Screen
     object Bookmarks : Screen
+    data class ViewQuestions(val source: String?) : Screen
 }
 
 data class UpdateInfo(
@@ -116,6 +120,7 @@ fun HomeRoute(repository: QuestionRepository) {
                     isDarkTheme = isDarkTheme,
                     onThemeToggle = { isDarkTheme = !isDarkTheme },
                     onNavigateToPractice = { source -> currentScreen = Screen.Practice(source) },
+                    onNavigateToViewQuestions = { source -> currentScreen = Screen.ViewQuestions(source) },
                     onNavigateToMock = { currentScreen = Screen.MockExam(30, 30) },
                     onNavigateToBookmarks = { currentScreen = Screen.Bookmarks },
                     onCheckForUpdates = {
@@ -142,6 +147,14 @@ fun HomeRoute(repository: QuestionRepository) {
                     source = screen.source,
                     initialIndex = screen.initialIndex,
                     onBack = { currentScreen = Screen.Dashboard }
+                )
+                is Screen.ViewQuestions -> ViewQuestionsScreen(
+                    repository = repository,
+                    source = screen.source,
+                    onBack = { currentScreen = Screen.Dashboard },
+                    onNavigateToPractice = { source, index ->
+                        currentScreen = Screen.Practice(source, index)
+                    }
                 )
                 is Screen.MockExam -> MockExamScreen(
                     repository = repository,
@@ -249,6 +262,7 @@ fun DashboardScreen(
     isDarkTheme: Boolean,
     onThemeToggle: () -> Unit,
     onNavigateToPractice: (String?) -> Unit,
+    onNavigateToViewQuestions: (String?) -> Unit,
     onNavigateToMock: () -> Unit,
     onNavigateToBookmarks: () -> Unit,
     onCheckForUpdates: () -> Unit,
@@ -274,7 +288,13 @@ fun DashboardScreen(
             "AIIMS CRE OT Technician Part 12",
             "anesthesia ot technician questions",
             "AIIMS CRE OT Anaesthesia Technician 100 Practice Questions",
-            "AIIMS CRE OT Anaesthesia Practice Paper 100Q"
+            "AIIMS CRE OT Anaesthesia Practice Paper 100Q",
+            "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2",
+            "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15",
+            "anesthesia ot technician exam part 17",
+            "anesthesia ot technician exam part 18",
+            "Anesthesia technician 1st year Question paper Paper -A",
+            "anesthesia ot technician exam part 20"
         )
         rawSources.sortedBy { predefinedOrder.indexOf(it) }
     }
@@ -465,60 +485,88 @@ fun DashboardScreen(
         items(sources) { source ->
             val count = repository.getQuestionsBySource(source).size
             Card(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .clickable { onNavigateToPractice(source) },
+                modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(16.dp),
                 colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
                 border = BorderStroke(1.dp, MaterialTheme.colorScheme.onSurface.copy(alpha = 0.05f))
             ) {
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(16.dp),
-                    horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    Column(modifier = Modifier.weight(1f)) {
-                        Text(
-                            text = getDisplaySourceName(source),
-                            fontWeight = FontWeight.SemiBold,
-                            fontSize = 15.sp,
-                            maxLines = 2,
-                            overflow = TextOverflow.Ellipsis
-                        )
-                        LazyRow(
-                            modifier = Modifier.padding(top = 6.dp),
-                            horizontalArrangement = Arrangement.spacedBy(6.dp),
-                            verticalAlignment = Alignment.CenterVertically
-                        ) {
-                            items(getDisplaySourceDescription(source)) { tag ->
-                                Surface(
-                                    shape = RoundedCornerShape(4.dp),
-                                    color = MaterialTheme.colorScheme.primary.copy(alpha = 0.1f)
-                                ) {
-                                    Text(
-                                        text = tag,
-                                        fontSize = 11.sp,
-                                        color = MaterialTheme.colorScheme.primary,
-                                        modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp),
-                                        maxLines = 1
-                                    )
+                Column(modifier = Modifier.fillMaxWidth()) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .clickable { onNavigateToPractice(source) }
+                            .padding(16.dp),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Column(modifier = Modifier.weight(1f)) {
+                            Text(
+                                text = getDisplaySourceName(source),
+                                fontWeight = FontWeight.SemiBold,
+                                fontSize = 15.sp,
+                                maxLines = 2,
+                                overflow = TextOverflow.Ellipsis
+                            )
+                            LazyRow(
+                                modifier = Modifier.padding(top = 6.dp),
+                                horizontalArrangement = Arrangement.spacedBy(6.dp),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                items(getDisplaySourceDescription(source)) { tag ->
+                                    Surface(
+                                        shape = RoundedCornerShape(4.dp),
+                                        color = MaterialTheme.colorScheme.primary.copy(alpha = 0.1f)
+                                    ) {
+                                        Text(
+                                            text = tag,
+                                            fontSize = 11.sp,
+                                            color = MaterialTheme.colorScheme.primary,
+                                            modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp),
+                                            maxLines = 1
+                                        )
+                                    }
                                 }
                             }
+                            Text(
+                                text = "$count MCQs available",
+                                fontSize = 13.sp,
+                                color = Color.Gray,
+                                modifier = Modifier.padding(top = 6.dp)
+                            )
                         }
                         Text(
-                            text = "$count MCQs available",
-                            fontSize = 13.sp,
-                            color = Color.Gray,
-                            modifier = Modifier.padding(top = 6.dp)
+                            text = "➡️",
+                            fontSize = 16.sp,
+                            modifier = Modifier.padding(start = 12.dp)
                         )
                     }
-                    Text(
-                        text = "➡️",
-                        fontSize = 16.sp,
-                        modifier = Modifier.padding(start = 12.dp)
+
+                    Spacer(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(1.dp)
+                            .background(MaterialTheme.colorScheme.onSurface.copy(alpha = 0.06f))
                     )
+
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 8.dp, vertical = 4.dp),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        TextButton(
+                            onClick = { onNavigateToViewQuestions(source) }
+                        ) {
+                            Text("👁️ View Questions", fontSize = 13.sp, color = MaterialTheme.colorScheme.primary)
+                        }
+
+                        TextButton(
+                            onClick = { onNavigateToPractice(source) }
+                        ) {
+                            Text("📖 Practice Mode", fontSize = 13.sp, color = MaterialTheme.colorScheme.primary)
+                        }
+                    }
                 }
             }
         }
@@ -1550,6 +1598,12 @@ fun getDisplaySourceName(rawSource: String?): String {
         "anesthesia ot technician questions" -> "Part 12"
         "AIIMS CRE OT Anaesthesia Technician 100 Practice Questions" -> "Part 13"
         "AIIMS CRE OT Anaesthesia Practice Paper 100Q" -> "Part 14"
+        "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2" -> "Part 15"
+        "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15" -> "Part 16"
+        "anesthesia ot technician exam part 17" -> "Part 17"
+        "anesthesia ot technician exam part 18" -> "Part 18"
+        "Anesthesia technician 1st year Question paper Paper -A" -> "Part 19"
+        "anesthesia ot technician exam part 20" -> "Part 20"
         else -> rawSource
     }
 }
@@ -1571,6 +1625,288 @@ fun getDisplaySourceDescription(rawSource: String?): List<String> {
         "anesthesia ot technician questions" -> listOf("Human Anatomy", "Physiology", "Blood & Circulation", "Nervous System")
         "AIIMS CRE OT Anaesthesia Technician 100 Practice Questions" -> listOf("OT Design & Zones", "Sterilization", "Biomedical Waste", "Infection Control")
         "AIIMS CRE OT Anaesthesia Practice Paper 100Q" -> listOf("Sterilization", "Surgical Instruments", "Fumigation", "Waste Management")
+        "AIIMS CRE OT Technician Previous Year Question Paper Solution Part#2" -> listOf("Biomedical Waste", "ECG", "Sterilization", "CPR")
+        "AIIMS CRE OT Technician Previous Year Question Paper Solution Part 15" -> listOf("Cranial Nerves", "Salivary Glands", "Hemophilia", "Blood Testing")
+        "anesthesia ot technician exam part 17" -> listOf("Anesthesia Machine", "IV Lines", "Airway Management", "PPE")
+        "anesthesia ot technician exam part 18" -> listOf("Pulse Oximetry", "Pre-oxygenation", "Ventilation", "Propofol")
+        "Anesthesia technician 1st year Question paper Paper -A" -> listOf("Cell Biology", "Skeletal System", "Respiratory System", "Heart Structure")
+        "anesthesia ot technician exam part 20" -> listOf("Gas Cylinder Color", "Laryngoscope Blades", "CVP", "ASA Class")
         else -> listOf("Practice Paper")
     }
 }
+
+// -------------------------------------------------------------
+// VIEW QUESTIONS SCREEN (READ-ONLY VERTICAL SCROLL)
+// -------------------------------------------------------------
+@Composable
+fun ViewQuestionsScreen(
+    repository: QuestionRepository,
+    source: String?,
+    onBack: () -> Unit,
+    onNavigateToPractice: (String?, Int) -> Unit
+) {
+    val questions = remember {
+        when (source) {
+            null -> repository.getAllQuestions()
+            "Starred Questions Review" -> repository.getBookmarkedQuestions()
+            else -> repository.getQuestionsBySource(source)
+        }
+    }
+
+    val listState = rememberLazyListState()
+    val coroutineScope = rememberCoroutineScope()
+    val firstVisibleIndex by remember { derivedStateOf { listState.firstVisibleItemIndex } }
+
+    if (questions.isEmpty()) {
+        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(16.dp)
+            ) {
+                Text("No questions found.")
+                Button(onClick = onBack) { Text("Back") }
+            }
+        }
+        return
+    }
+
+    BackHandler(enabled = true) {
+        onBack()
+    }
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(horizontal = 16.dp, vertical = 8.dp)
+    ) {
+        // Header
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 12.dp),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.weight(1f)) {
+                IconButton(onClick = onBack) {
+                    Text("⬅️", fontSize = 18.sp)
+                }
+                Spacer(modifier = Modifier.width(4.dp))
+                Column {
+                    Text(
+                        text = getDisplaySourceName(source),
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 16.sp,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                    Text(text = "View Mode (Read-Only)", fontSize = 11.sp, color = Color.Gray)
+                }
+            }
+        }
+
+        // Horizontal Quick-Jump bar
+        Text(
+            text = "Jump to Question:",
+            fontSize = 11.sp,
+            color = Color.Gray,
+            modifier = Modifier.padding(bottom = 6.dp)
+        )
+        LazyRow(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(bottom = 12.dp),
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            itemsIndexed(questions) { index, _ ->
+                val isSelected = firstVisibleIndex == index
+                Box(
+                    modifier = Modifier
+                        .clip(RoundedCornerShape(8.dp))
+                        .background(
+                            if (isSelected) MaterialTheme.colorScheme.primary
+                            else MaterialTheme.colorScheme.primary.copy(alpha = 0.1f)
+                        )
+                        .clickable {
+                            coroutineScope.launch {
+                                listState.animateScrollToItem(index)
+                            }
+                        }
+                        .padding(horizontal = 12.dp, vertical = 6.dp),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(
+                        text = "Q${index + 1}",
+                        color = if (isSelected) Color.white() else MaterialTheme.colorScheme.primary,
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 12.sp
+                    )
+                }
+            }
+        }
+
+        // LazyColumn for the questions list
+        LazyColumn(
+            state = listState,
+            modifier = Modifier
+                .weight(1f)
+                .fillMaxWidth(),
+            verticalArrangement = Arrangement.spacedBy(20.dp)
+        ) {
+            itemsIndexed(questions) { index, question ->
+                Card(
+                    modifier = Modifier.fillMaxWidth(),
+                    shape = RoundedCornerShape(16.dp),
+                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+                    border = BorderStroke(1.dp, MaterialTheme.colorScheme.onSurface.copy(alpha = 0.05f))
+                ) {
+                    Column(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(16.dp),
+                        verticalArrangement = Arrangement.spacedBy(12.dp)
+                    ) {
+                        // Card Header
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Text(
+                                text = "Question ${index + 1} of ${questions.size}",
+                                fontSize = 13.sp,
+                                color = Color.Gray,
+                                fontWeight = FontWeight.Medium
+                            )
+                            
+                            // Practice from here button
+                            Button(
+                                onClick = { onNavigateToPractice(source, index) },
+                                contentPadding = PaddingValues(horizontal = 10.dp, vertical = 4.dp),
+                                modifier = Modifier.height(28.dp),
+                                shape = RoundedCornerShape(6.dp),
+                                colors = ButtonDefaults.filledTonalButtonColors()
+                            ) {
+                                Text("📖 Practice", fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                            }
+                        }
+
+                        // Question Text
+                        Text(
+                            text = question.question,
+                            style = MaterialTheme.typography.titleMedium.copy(
+                                lineHeight = 22.sp,
+                                fontWeight = FontWeight.SemiBold
+                            )
+                        )
+
+                        // Options
+                        if (question.options.isNotEmpty()) {
+                            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                                question.options.forEach { option ->
+                                    val isCorrect = option.key.equals(question.answer, ignoreCase = true)
+                                    
+                                    val cardBgColor = if (isCorrect) Color(0xFFE8F5E9) else MaterialTheme.colorScheme.surface
+                                    val borderColor = if (isCorrect) Color(0xFF4CAF50) else MaterialTheme.colorScheme.onSurface.copy(alpha = 0.05f)
+                                    val keyBgColor = if (isCorrect) Color(0xFF2E7D32) else MaterialTheme.colorScheme.primary.copy(alpha = 0.1f)
+                                    val keyTextColor = if (isCorrect) Color.white() else MaterialTheme.colorScheme.primary
+
+                                    Card(
+                                        modifier = Modifier.fillMaxWidth(),
+                                        shape = RoundedCornerShape(10.dp),
+                                        colors = CardDefaults.cardColors(containerColor = cardBgColor),
+                                        border = BorderStroke(1.2.dp, borderColor)
+                                    ) {
+                                        Row(
+                                            modifier = Modifier
+                                                .fillMaxWidth()
+                                                .padding(10.dp),
+                                            verticalAlignment = Alignment.CenterVertically
+                                        ) {
+                                            Box(
+                                                contentAlignment = Alignment.Center,
+                                                modifier = Modifier
+                                                    .size(30.dp)
+                                                    .background(keyBgColor, CircleShape)
+                                            ) {
+                                                Text(
+                                                    text = option.key,
+                                                    fontWeight = FontWeight.Bold,
+                                                    fontSize = 13.sp,
+                                                    color = keyTextColor
+                                                )
+                                            }
+                                            Spacer(modifier = Modifier.width(10.dp))
+                                            Text(
+                                                text = option.text,
+                                                style = MaterialTheme.typography.bodyMedium,
+                                                color = MaterialTheme.colorScheme.onSurface
+                                            )
+                                        }
+                                    }
+                                }
+                            }
+                        } else {
+                            // Direct Q&A type fallback
+                            Card(
+                                modifier = Modifier.fillMaxWidth(),
+                                shape = RoundedCornerShape(10.dp),
+                                colors = CardDefaults.cardColors(containerColor = Color(0xFFE8F5E9)),
+                                border = BorderStroke(1.2.dp, Color(0xFF4CAF50))
+                            ) {
+                                Column(modifier = Modifier.padding(12.dp)) {
+                                    Text(
+                                        text = "Answer:",
+                                        fontWeight = FontWeight.Bold,
+                                        color = Color(0xFF2E7D32),
+                                        fontSize = 13.sp
+                                    )
+                                    Text(
+                                        text = question.answer,
+                                        style = MaterialTheme.typography.bodyMedium,
+                                        modifier = Modifier.padding(top = 4.dp)
+                                    )
+                                }
+                            }
+                        }
+
+                        // Explanation
+                        if (question.explanation.isNotEmpty()) {
+                            Card(
+                                modifier = Modifier.fillMaxWidth(),
+                                shape = RoundedCornerShape(10.dp),
+                                colors = CardDefaults.cardColors(
+                                    containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.05f)
+                                ),
+                                border = BorderStroke(1.dp, MaterialTheme.colorScheme.primary.copy(alpha = 0.1f))
+                            ) {
+                                Row(
+                                    modifier = Modifier.padding(12.dp),
+                                    verticalAlignment = Alignment.Top
+                                ) {
+                                    Text("💡", fontSize = 16.sp)
+                                    Spacer(modifier = Modifier.width(8.dp))
+                                    Column {
+                                        Text(
+                                            text = "Explanation",
+                                            fontWeight = FontWeight.Bold,
+                                            fontSize = 12.sp,
+                                            color = MaterialTheme.colorScheme.primary
+                                        )
+                                        Text(
+                                            text = question.explanation,
+                                            fontSize = 13.sp,
+                                            lineHeight = 18.sp,
+                                            modifier = Modifier.padding(top = 2.dp)
+                                        )
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
