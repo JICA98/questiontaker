@@ -686,6 +686,7 @@ fun PracticeScreen(
     }
 
     val currentQuestion = questions[currentIndex]
+    val shuffledOptions = remember(currentQuestion) { currentQuestion.options.shuffled() }
     var selectedOption by remember(currentQuestion) { mutableStateOf<String?>(null) }
     var isStarred by remember(currentQuestion) { mutableStateOf(repository.isBookmarked(currentQuestion.id)) }
 
@@ -784,8 +785,8 @@ fun PracticeScreen(
             }
 
             // Options List
-            if (currentQuestion.options.isNotEmpty()) {
-                items(currentQuestion.options) { option ->
+            if (shuffledOptions.isNotEmpty()) {
+                items(shuffledOptions) { option ->
                     val isCorrectOption = option.key.equals(currentQuestion.answer, ignoreCase = true)
                     val isSelectedOption = option.key.equals(selectedOption, ignoreCase = true)
                     
@@ -1040,6 +1041,7 @@ fun MockExamScreen(
     }
 
     val currentQuestion = examQuestions[currentIndex]
+    val shuffledOpts = remember(currentQuestion) { currentQuestion.options.shuffled() }
 
     Column(
         modifier = Modifier
@@ -1206,8 +1208,8 @@ fun MockExamScreen(
             }
 
             // Options
-            if (currentQuestion.options.isNotEmpty()) {
-                items(currentQuestion.options) { option ->
+            if (shuffledOpts.isNotEmpty()) {
+                items(shuffledOpts) { option ->
                     val isSelected = userAnswers[currentIndex] == option.key
                     val cardBgColor = if (isSelected) {
                         MaterialTheme.colorScheme.primary.copy(alpha = 0.1f)
