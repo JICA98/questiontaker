@@ -786,7 +786,8 @@ fun PracticeScreen(
 
             // Options List
             if (shuffledOptions.isNotEmpty()) {
-                items(shuffledOptions) { option ->
+                itemsIndexed(shuffledOptions) { idx, option ->
+                    val displayKey = ('A' + idx).toString()
                     val isCorrectOption = option.key.equals(currentQuestion.answer, ignoreCase = true)
                     val isSelectedOption = option.key.equals(selectedOption, ignoreCase = true)
                     
@@ -845,7 +846,7 @@ fun PracticeScreen(
                                     .background(keyBgColor, CircleShape)
                             ) {
                                 Text(
-                                    text = option.key,
+                                    text = displayKey,
                                     fontWeight = FontWeight.Bold,
                                     fontSize = 15.sp,
                                     color = keyTextColor
@@ -1209,7 +1210,8 @@ fun MockExamScreen(
 
             // Options
             if (shuffledOpts.isNotEmpty()) {
-                items(shuffledOpts) { option ->
+                itemsIndexed(shuffledOpts) { idx, option ->
+                    val displayKey = ('A' + idx).toString()
                     val isSelected = userAnswers[currentIndex] == option.key
                     val cardBgColor = if (isSelected) {
                         MaterialTheme.colorScheme.primary.copy(alpha = 0.1f)
@@ -1248,7 +1250,7 @@ fun MockExamScreen(
                                     )
                             ) {
                                 Text(
-                                    text = option.key,
+                                    text = displayKey,
                                     fontWeight = FontWeight.Bold,
                                     fontSize = 15.sp,
                                     color = if (isSelected) Color.white() else MaterialTheme.colorScheme.primary
